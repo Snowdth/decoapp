@@ -12,7 +12,52 @@
 
 
 
-			
+			<div class="a">
+				<div class="title-section">
+					<h3>A</h3>
+					<!-- <div class="inline-block">
+						<input v-on:change="changeTotalHeight(),reCalculate()" v-model="totalHeight">
+						<p>Alto</p>
+					</div>
+					<div class="inline-block">
+						<input v-on:change="changeTotalWidth(),reCalculate()" v-model="totalWidth">
+						<p>Ancho</p>
+					</div> -->
+				</div>
+
+				<!-- Puerta -->
+				<div class="content" v-for="med in X">
+					<h5>{{med.name}}</h5>
+					<ul>
+						<li>
+							<div class="width-letra">
+								<span>Cantidad</span>
+							</div>
+							<input v-model="med.cantidad" v-on:change="reCalculate(), changeTotalWidth()">
+						</li>
+						<li>
+							<div class="width-letra" >
+								<span>Altura</span>
+							</div>
+							<input v-model="med.height" v-on:change="reCalculate">
+						</li>
+						<li>
+							<div class="width-letra">
+								<span>Ancho</span>
+							</div>
+							<input v-model="med.width" v-on:change="reCalculate">
+						</li>
+						<li>
+							<select class="color"
+								v-model="med.color" v-on:change="reCalculate">
+								<option value="white">Blanco</option>
+								<option value="black">Negro</option>
+								<option value="other">Other</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 
 
@@ -59,7 +104,6 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
-								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -110,51 +154,10 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
-								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
 				</div>
-			</div>
-
-
-
-
-
-			<div class="Extras">
-				<div class="title-section">
-					<h3>Extras</h3>
-
-				</div>
-
-				<div class="content" v-for="med in Extras">
-					<h5>{{med.name}}</h5>
-					<ul>
-
-						<li v-if="med.id == 7">
-							<div class="width-letra">
-								<span>Metro</span>
-							</div>
-
-
-							<input v-model="med.tamanoMetro" v-on:change="reCalculate">
-						</li>	
-						<li v-else="med.id == 7">
-							<div class="width-letra">
-								<span>Cantidad</span>
-							</div>
-
-
-							<input v-model="med.cantidad" v-on:change="reCalculate">
-						</li>
-
-
-						
-					</ul>
-				</div>
-
-
-
 			</div>
 
 		</div>
@@ -179,7 +182,7 @@
 
 			<div class="top-30">
 				<span>Precio</span>
-				<h5>{{totalCostY +totalCostZ }}</h5>
+				<h5>{{totalCostX + totalCostY +totalCostZ}}</h5>
 			</div>
 		</div>
 

@@ -1,6 +1,5 @@
 html,
 body {
-  background-color: #eee;
   -webkit-font-smoothing: antialiased;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -35,16 +34,11 @@ p {
   margin: 0;
 }
 .medidas {
-  flex-wrap: wrap;
   display: flex;
-  background: #f0f8ff;
-  margin: 20px;
 }
 .a,
 .b,
-.c,
-.Extras {
-  background-color: #fff;
+.c {
   min-width: 100px;
   margin: 10px;
 }
@@ -70,7 +64,5 @@ p {
   display: none;
 }
 .top-30 {
-  margin: 20px;
-  background-color: #fff;
   margin-top: 30px;
 }

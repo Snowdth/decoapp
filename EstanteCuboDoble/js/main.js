@@ -3,13 +3,13 @@ var app= new Vue ({
 	data:{
 		newHeight: "",
 
-		lastTotalHeight: 140,
-		lastTotalWidth: 30,
-		lastTotalDepth: 30,
+		lastTotalHeight: 70,
+		lastTotalWidth: 35,
+		lastTotalDepth: 35,
 
-		totalHeight: 140,
-		totalWidth: 30,
-		totalDepth: 30,
+		totalHeight: 70,
+		totalWidth: 35,
+		totalDepth: 35,
 
 		totalCostX: 0,
 		totalCostY: 0,
@@ -56,52 +56,28 @@ var app= new Vue ({
 			{
 				id: 1,
 				cost:0,
-				name:'Puerta',
-				height:136.4,
-				width:26.4,
+				name:'nothing',
+				height:0,
+				width:0,
 				cantidad:1,
 				color:'white',
 				area:0,
 			},
-			{	
-				id: 2,
-				cost:0,
-				name:'Nordex',
-				height:140,
-				width:30,
-				cantidad:1,
-				color:'nordex',
-				area:0,
-			},
+			
 			
 		],
 // SEPARACIÓN
 // SEPARACIÓN
 		Y:[
 			{
-				name:'Laterales de Puerta',
-				height:140,
-				width:12,
+				name:'Laterales ',
+				height:70,
+				width:35,
 				cantidad:2,
 				color:'white',
 				area:0,
 			},
-			{
-				name:'Laterales de Contenido',
-				height:140,
-				width:18,
-				cantidad:2,
-				color:'white',
-				area:0,
-			},
-			{
-				name:'Separador Vertical de Contenido',
-				height:20,
-				width:18,
-				cantidad:2,
-				color:'white',
-				area:0,
-			},
+			
 		],
 
 // SEPARACIÓN
@@ -111,30 +87,23 @@ var app= new Vue ({
 
 		Z:[
 			{
-				name:'Superior e Inferior de la Puerta',
-				height:12,
-				width:26.4,
+				name:'Superior e Inferior Horizontal',
+				height:35,
+				width:31.4,
 				cantidad:2,
 				color:'white',
 				area:0,
 			},
 
 			{
-				name:'Separador Horizontal de Puerta',
-				height:10,
-				width:26.4,
-				cantidad:4,
+				name:'Separador Horizontal',
+				height:35,
+				width:31.4,
+				cantidad:1,
 				color:'white',
 				area:0,
 			},
-			{
-				name:'Separador Horizontal de Contenido',
-				height:18,
-				width:26.4,
-				cantidad:6,
-				color:'white',
-				area:0,
-			},
+			
 
 		],
 
@@ -148,42 +117,6 @@ var app= new Vue ({
 				cantidad:5,
 			},
 			
-			{
-				id: 2,
-				name:'Patines',
-				costo:0.04,
-				cantidad:4,
-			},
-			{
-				id: 3,
-				name:'Sujetadores',
-				costo:0.15,
-				cantidad:2,
-			},
-			{
-				id: 4,
-				name:'Alcallatas',
-				costo:0.06,
-				cantidad:2,
-			},
-			{
-				id: 5,
-				name:'Tarugos de Madera',
-				costo:0.08,
-				cantidad:2,
-			},
-			{
-				id: 6,
-				name:'Tornillos',
-				costo:0.047,
-				cantidad:52,
-			},
-			{
-				id: 7,
-				name:'Varillas',
-				costo:2.50,
-				tamanoMetro:1.5,
-			},
 			
 		// 	{
 		// 		name:'Tiradores-Manijas',
@@ -254,12 +187,11 @@ var app= new Vue ({
 
 			var dh = this.totalHeight - this.lastTotalHeight
 
-			this.X[0].height += dh
+			
 			// this.X[1].height += dh
-			this.X[1].height += dh
+		
 			this.Y[0].height += dh
-			this.Y[1].height += dh
-			this.Y[2].height += dh
+			
 			
 
 
@@ -272,13 +204,9 @@ var app= new Vue ({
 
 			var dh = this.totalWidth - this.lastTotalWidth
 
-			
-			this.X[0].width += dh 
-			this.X[1].width += dh
-				
 			this.Z[0].width += dh
 			this.Z[1].width += dh
-			this.Z[2].width += dh
+			
 
 			this.lastTotalWidth = this.totalWidth
 		
@@ -288,12 +216,11 @@ var app= new Vue ({
 
 			var dh = this.totalDepth - this.lastTotalDepth
 
-			this.Y[0].width += (this.totalDepth - this.lastTotalDepth)/2
-			this.Y[1].width += (this.totalDepth - this.lastTotalDepth)/2
-			this.Y[2].width += (this.totalDepth - this.lastTotalDepth)/2
-			this.Z[0].height += (this.totalDepth - this.lastTotalDepth)/2
-			this.Z[1].height += (this.totalDepth - this.lastTotalDepth)/2
-			this.Z[2].height += (this.totalDepth - this.lastTotalDepth)/2
+			this.Y[0].width += dh
+			
+			this.Z[0].height += dh
+			this.Z[1].height += dh
+			
 
 			this.lastTotalDepth = this.totalDepth
 
@@ -416,7 +343,7 @@ var app= new Vue ({
 	    calculateTotalExtras: function (){
 	    	this.totalCostExtras = 0
 			
-	      for (var i = 0; i < this.Extras.length - 1; i++) {
+	      for (var i = 0; i < this.Extras.length; i++) {
 	        var piece = this.Extras[i]
 	        this.totalCostExtras += piece.cost
 	      }

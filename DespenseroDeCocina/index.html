@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 	<div class="wrapper" id="app">
@@ -46,14 +47,23 @@
 							</div>
 							<input v-model="med.width" v-on:change="reCalculate">
 						</li>
-						<li>
+
+
+						<li v-if="med.id == 2">
+							<div></div>
+						</li>
+
+
+						<li  v-else="med.id == 2">
 							<select class="color"
-								v-model="med.color" v-on:change="reCalculate">
+								v-model="med.color" v-on:change="reCalculate"  >
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -103,6 +113,7 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -153,10 +164,44 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
 				</div>
+			</div>
+
+
+
+
+
+			<div class="Extras">
+				<div class="title-section">
+					<h3>Extras</h3>
+
+				</div>
+
+				<div class="content" v-for="med in Extras">
+					<h5>{{med.name}}</h5>
+					<ul>
+
+							
+						<li >
+							<div class="width-letra">
+								<span>Cantidad</span>
+							</div>
+
+
+							<input v-model="med.cantidad" v-on:change="reCalculate">
+						</li>
+
+
+						
+					</ul>
+				</div>
+
+
+
 			</div>
 
 		</div>
@@ -181,7 +226,7 @@
 
 			<div class="top-30">
 				<span>Precio</span>
-				<h5>{{totalCostX + totalCostY +totalCostZ}}</h5>
+				<h5>{{totalCostX + totalCostY +totalCostZ + totalCostExtras}}</h5>
 			</div>
 		</div>
 
