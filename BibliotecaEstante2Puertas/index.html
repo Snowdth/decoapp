@@ -47,12 +47,17 @@
 							</div>
 							<input v-model="med.width" v-on:change="reCalculate">
 						</li>
-						<li>
+
+						<li v-if="med.id == 2">
+							<div></div>
+						</li>
+						<li v-else="med.id == 2">
 							<select class="color"
-								v-model="med.color" v-on:change="reCalculate">
+								v-model="med.color" v-on:change="reCalculate" >
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -104,6 +109,7 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -154,11 +160,15 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
 				</div>
 			</div>
+
+
+
 
 
 			<div class="Extras">
@@ -171,7 +181,7 @@
 					<h5>{{med.name}}</h5>
 					<ul>
 
-							
+
 						<li >
 							<div class="width-letra">
 								<span>Cantidad</span>
@@ -185,9 +195,10 @@
 						
 					</ul>
 				</div>
+
+
+
 			</div>
-
-
 
 		</div>
 
@@ -211,7 +222,7 @@
 
 			<div class="top-30">
 				<span>Precio</span>
-				<h5>{{totalCostX + totalCostY +totalCostZ}}</h5>
+				<h5>{{totalCostX + totalCostY +totalCostZ + totalCostExtras}}</h5>
 			</div>
 		</div>
 

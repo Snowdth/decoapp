@@ -48,11 +48,9 @@
 							<input v-model="med.width" v-on:change="reCalculate">
 						</li>
 
-						<li v-if="med.id == 2">
-							<div></div>
-						</li>
+						
 
-						<li v-else="med.id == 2">
+						<li>
 							<select class="color"
 								v-model="med.color" v-on:change="reCalculate" >
 								<option value="white">Blanco</option>
@@ -182,15 +180,15 @@
 					<h5>{{med.name}}</h5>
 					<ul>
 
-						<li v-if="med.id == 7">
+						<li v-if="med.id == 3">
 							<div class="width-letra">
 								<span>Metro</span>
 							</div>
 
 
-							<input v-model="med.tamanoMetro" v-on:change="reCalculate">
+							<input v-model="med.cantidad" v-on:change="reCalculate">
 						</li>	
-						<li v-else="med.id == 7">
+						<li v-else="med.id == 3">
 							<div class="width-letra">
 								<span>Cantidad</span>
 							</div>
