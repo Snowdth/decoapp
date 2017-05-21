@@ -156,6 +156,11 @@ var app= new Vue ({
 				costo:0.04,
 				cantidad:1,
 			},
+			{
+				name:'Tornillos',
+				costo:0.047,
+				cantidad:32,
+			},
 
 		// 	{
 		// 		name:'Tiradores-Manijas',
@@ -243,8 +248,8 @@ var app= new Vue ({
 			var dh = this.totalHeight - this.lastTotalHeight
 
 			this.X[0].height += dh
-			// this.X[1].height += dh
-			this.X[2].height += dh
+			this.X[1].height += dh
+			// this.X[2].height += dh
 			this.Y[0].height += dh
 			
 

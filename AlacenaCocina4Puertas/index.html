@@ -160,6 +160,35 @@
 				</div>
 			</div>
 
+
+			<div class="Extras">
+				<div class="title-section">
+					<h3>Extras</h3>
+
+				</div>
+
+				<div class="content" v-for="med in Extras">
+					<h5>{{med.name}}</h5>
+					<ul>
+
+							
+						<li >
+							<div class="width-letra">
+								<span>Cantidad</span>
+							</div>
+
+
+							<input v-model="med.cantidad" v-on:change="reCalculate">
+						</li>
+
+
+						
+					</ul>
+				</div>
+			</div>
+
+
+
 		</div>
 
 		<div class="precio-total">

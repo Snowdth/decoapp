@@ -11,6 +11,7 @@ var app= new Vue ({
 		totalWidth: 40,
 		totalDepth: 32,
 
+
 		totalCostX: 0,
 		totalCostY: 0,
 		totalCostZ: 0,
@@ -76,11 +77,11 @@ var app= new Vue ({
 			{	
 				id: 3,
 				cost:0,
-				name:'Nordex',
+				name:'Tabla peque'+String.fromCharCode(241)+'a vertical',
 				height:6,
 				width:36.4,
 				cantidad:1,
-				color:'nordex',
+				color:'white',
 				area:0,
 			},
 			
@@ -137,8 +138,8 @@ var app= new Vue ({
 
 		Extras:[
 			{
-				name:'Par de Bisagras Cangrejo',
-				costo:2.30,
+				name:'Bisagras Cangrejo',
+				costo:1.15,
 				cantidad:2,
 			},
 			
@@ -152,7 +153,12 @@ var app= new Vue ({
 				costo:0.04,
 				cantidad:4,
 			},
-			
+			{
+				name:'Tornillos',
+				costo:0.047,
+				cantidad:32,
+			},
+
 			
 		// 	{
 		// 		name:'Tiradores-Manijas',
@@ -223,7 +229,7 @@ var app= new Vue ({
 
 			var dh = this.totalHeight - this.lastTotalHeight
 
-			this.X[0].height += dh
+			this.X[0].height = this.totalHeight * 0.36
 			// this.X[1].height += dh
 			this.X[1].height += dh
 			

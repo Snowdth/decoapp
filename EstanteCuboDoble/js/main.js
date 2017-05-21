@@ -111,11 +111,11 @@ var app= new Vue ({
 
 		Extras:[
 			{
-				id: 1,
-				name:'Bisagra Grandes',
-				costo:0.48,
-				cantidad:5,
+				name:'Tornillos',
+				costo:0.047,
+				cantidad:32,
 			},
+
 			
 			
 		// 	{

@@ -118,25 +118,31 @@ var app= new Vue ({
 
 		Extras:[
 			{
-				id: 1,
-				name:'Bisagra Grandes',
+				name:'Bisagras Grandes',
 				costo:0.48,
 				cantidad:2,
 			},
 			
 			{
-				id: 2,
-				name:'Tornillos',
-				costo:0.047,
+				name:'Tornillos Fijadores',
+				costo:0.18,
 				cantidad:2,
 			},
 			{
-				id: 3,
 				name:'Tarugos Naranja',
 				costo:0.08,
+				cantidad:2,
+			},
+			{
+				name:'Tiradores-Manijas',
+				costo:3,
 				cantidad:1,
 			},
-			
+			{
+				name:'Pistones o Bombas Hidraulicas o Brasos',
+				costo:4.50,
+				cantidad:2,
+			},
 		// 	{
 		// 		name:'Tiradores-Manijas',
 		// 		costo:3,

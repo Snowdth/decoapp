@@ -164,6 +164,11 @@
 
 			<div class="top-30">
 				<div class="inline-block">
+					<h5>Piezas</h5>
+					<input v-on:change="changeTotalHeight(),reCalculate()" v-model="totalPieces" class="input-formulario">
+				</div>
+
+				<div class="inline-block">
 					<h5>Alto</h5>
 					<input v-on:change="changeTotalHeight(),reCalculate()" v-model="totalHeight" class="input-formulario">
 				</div>
@@ -179,7 +184,7 @@
 
 			<div class="top-30">
 				<span>Precio</span>
-				<h5>{{totalCostY +totalCostZ }}</h5>
+				<h5>{{totalCostY +totalCostZ+ totalCostExtras }}</h5>
 			</div>
 		</div>
 

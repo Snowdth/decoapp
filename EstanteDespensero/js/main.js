@@ -124,6 +124,13 @@ var app= new Vue ({
 				costo:0.04,
 				cantidad:4,
 			},
+			{
+				name:'Tornillos',
+				costo:0.047,
+				cantidad:32,
+			},
+
+
 			
 			
 		// 	{
@@ -213,7 +220,7 @@ var app= new Vue ({
 
 			
 			this.X[0].width += dh 
-				
+			this.X[1].width += dh 
 			this.Z[0].width += dh
 			this.Z[1].width += dh
 
