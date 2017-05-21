@@ -3,7 +3,6 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 	<div class="wrapper" id="app">
@@ -49,10 +48,11 @@
 						</li>
 						<li>
 							<select class="color"
-								v-model="med.color" v-on:change="reCalculate">
+								v-model="med.color" v-on:change="reCalculate" v-if="med.id == 1">
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -104,6 +104,7 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -154,6 +155,7 @@
 								<option value="white">Blanco</option>
 								<option value="black">Negro</option>
 								<option value="other">Other</option>
+								<option value="nordex">Nordex</option>
 							</select>
 						</li>
 					</ul>
@@ -173,7 +175,16 @@
 				<div class="content" v-for="med in Extras">
 					<h5>{{med.name}}</h5>
 					<ul>
-						<li>
+
+						<li v-if="med.id == 7">
+							<div class="width-letra">
+								<span>Metro</span>
+							</div>
+
+
+							<input v-model="med.tamanoMetro" v-on:change="reCalculate">
+						</li>	
+						<li v-else="med.id == 7">
 							<div class="width-letra">
 								<span>Cantidad</span>
 							</div>
@@ -182,6 +193,8 @@
 							<input v-model="med.cantidad" v-on:change="reCalculate">
 						</li>
 
+
+						
 					</ul>
 				</div>
 
@@ -192,6 +205,7 @@
 		</div>
 
 		<div class="precio-total">
+
 
 			<div class="top-30">
 				<div class="inline-block">
@@ -208,19 +222,9 @@
 				</div>
 			</div>
 
-			<div style="background: #f0f8ff;">
-				<div class="top-30 inline-block">
-					<span>Precio Original</span>
-					<h5>{{ originalPrice }}</h5>
-				</div>
-				<div class="top-30 inline-block">
-					<span>Aumento</span>
-					<h5>{{ aumento }}</h5>
-				</div>
-				<div class="top-30 inline-block">
-					<span>Precio Final</span>
-					<h5>{{ totalPrice }}</h5>
-				</div>
+			<div class="top-30">
+				<span>Precio</span>
+				<h5>{{totalCostX + totalCostY +totalCostZ + totalCostExtras}}</h5>
 			</div>
 		</div>
 

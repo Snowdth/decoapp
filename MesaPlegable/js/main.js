@@ -3,24 +3,18 @@ var app= new Vue ({
 	data:{
 		newHeight: "",
 
-		lastTotalHeight: 80,
-		lastTotalWidth: 55,
-		lastTotalDepth: 20,
+		lastTotalHeight: 140,
+		lastTotalWidth: 30,
+		lastTotalDepth: 30,
 
-		totalHeight: 80,
-		totalWidth: 55,
-		totalDepth: 20,
+		totalHeight: 140,
+		totalWidth: 30,
+		totalDepth: 30,
 
 		totalCostX: 0,
 		totalCostY: 0,
 		totalCostZ: 0,
-		totalCost: 0,
 		totalCostExtras: 0,
-		totalPrice: 0,
-
-		original: true,
-		originalPrice: 0,
-		aumento: 0,
 
 		totalAreaX: 0,
 		totalAreaY: 0,
@@ -38,7 +32,11 @@ var app= new Vue ({
 			other: {
 				price: 200,
 				centimeterPrice: 0.003830243603493182
-			}
+			},
+			nordex: {
+		        price: 36,
+		        centimeterPrice: 0.001209352324643913
+		    }
 		},
 
 		// A: {
@@ -56,40 +54,50 @@ var app= new Vue ({
 
 		X:[
 			{
+				id: 1,
 				cost:0,
 				name:'Puerta',
-				height:78,
-				width:55,
+				height:136.4,
+				width:26.4,
 				cantidad:1,
 				color:'white',
 				area:0,
 			},
-			{
+			{	
+				id: 2,
 				cost:0,
-				name:'Sujetador de Puerta',
-				height:76.1,
-				width:51,
+				name:'Nordex',
+				height:140,
+				width:30,
 				cantidad:1,
-				color:'white',
+				color:'nordex',
 				area:0,
 			},
-			{
-				cost:0,
-				name:'Sujetadores',
-				height:8,
-				width:51.4,
-				cantidad:2,
-				color:'white',
-				area:0,
-			},
+			
 		],
 // SEPARACIÓN
 // SEPARACIÓN
 		Y:[
 			{
-				name:'Laterales',
-				height:78.1,
-				width:20,
+				name:'Laterales de Puerta',
+				height:140,
+				width:12,
+				cantidad:2,
+				color:'white',
+				area:0,
+			},
+			{
+				name:'Laterales de Contenido',
+				height:140,
+				width:18,
+				cantidad:2,
+				color:'white',
+				area:0,
+			},
+			{
+				name:'Separador Vertical de Contenido',
+				height:20,
+				width:18,
 				cantidad:2,
 				color:'white',
 				area:0,
@@ -103,26 +111,27 @@ var app= new Vue ({
 
 		Z:[
 			{
-				name:'Parte de Superior',
-				height:21.9,
-				width:55,
-				cantidad:1,
-				color:'white',
-				area:0,
-			},
-			{
-				name:'Parte de Inferior',
-				height:20,
-				width:51.4,
-				cantidad:1,
-				color:'white',
-				area:0,
-			},
-			{
-				name:'Medios Horizontales',
-				height:18,
-				width:51.4,
+				name:'Superior e Inferior de la Puerta',
+				height:12,
+				width:26.4,
 				cantidad:2,
+				color:'white',
+				area:0,
+			},
+
+			{
+				name:'Separador Horizontal de Puerta',
+				height:10,
+				width:26.4,
+				cantidad:6,
+				color:'white',
+				area:0,
+			},
+			{
+				name:'Separador Horizontal de Contenido',
+				height:18,
+				width:26.4,
+				cantidad:6,
 				color:'white',
 				area:0,
 			},
@@ -133,41 +142,49 @@ var app= new Vue ({
 
 		Extras:[
 			{
-				name:'Par de Bisagras Cangrejo',
-				costo:2.30,
+				id: 1,
+				name:'Bisagra Grandes',
+				costo:0.48,
+				cantidad:5,
+			},
+			
+			{
+				id: 2,
+				name:'Patines',
+				costo:0.04,
+				cantidad:4,
+			},
+			{
+				id: 3,
+				name:'Sujetadores',
+				costo:0.15,
 				cantidad:2,
 			},
 			{
-				name:'Bisagra Grandes',
-				costo:0.48,
-				cantidad:3,
+				id: 4,
+				name:'Alcallatas',
+				costo:0.06,
+				cantidad:2,
 			},
 			{
-				name:'Perno + Mariposa',
-				costo:0.90,
-				cantidad:1,
-			},
-			{
-				name:'Tornillos Fijadores',
-				costo:0.18,
-				cantidad:4,
-			},
-			{
-				name:'Tarugos Naranja',
+				id: 5,
+				name:'Tarugos de Madera',
 				costo:0.08,
-				cantidad:4,
+				cantidad:2,
 			},
 			{
-				name:'Patines',
-				costo:0.04,
-				cantidad:1,
-			},
-			{
+				id: 6,
 				name:'Tornillos',
 				costo:0.047,
-				cantidad:32,
+				cantidad:52,
 			},
-
+			{
+				id: 7,
+				name:'Varillas',
+				costo:2.50,
+				tamanoMetro:1.5,
+			},
+			
 		// 	{
 		// 		name:'Tiradores-Manijas',
 		// 		costo:3,
@@ -191,30 +208,18 @@ var app= new Vue ({
 		// 		costo:9,
 		// 		cantidad:2,
 		// 	},
-
+		
 		// 	{
 		// 		name:'Bisagra Chica',
 		// 		costo:0.36,
 		// 		cantidad:1,
 		// 	},
-
-		// 	{
-		// 		name:'Tarugos de Madera',
-		// 		costo:0.08,
-		// 		cantidad:1,
-		// 	},
-
-		// 	{
-		// 		name:'Sujetadores',
-		// 		costo:0.15,
-		// 		cantidad:1,
-		// 	},
-		// 	{
-		// 		name:'Alcallatas',
-		// 		costo:0.06,
-		// 		cantidad:1,
-		// 	},
-		//
+		
+		
+		
+			
+			
+		// 
 		// 	{
 		// 		name:'Enchufe',
 		// 		costo:0.50,
@@ -225,11 +230,7 @@ var app= new Vue ({
 		// 		costo:1.20,
 		// 		tamañoMetro:1,
 		// 	},
-		//	{
-		// 		name:'Varillas',
-		// 		costo:2.50,
-		// 		tamañoMetro:1,
-		// 	},
+		
 
 		]
 
@@ -254,10 +255,12 @@ var app= new Vue ({
 			var dh = this.totalHeight - this.lastTotalHeight
 
 			this.X[0].height += dh
+			// this.X[1].height += dh
 			this.X[1].height += dh
-			// this.X[2].height += dh
 			this.Y[0].height += dh
-
+			this.Y[1].height += dh
+			this.Y[2].height += dh
+			
 
 
 			this.lastTotalHeight = this.totalHeight
@@ -269,16 +272,16 @@ var app= new Vue ({
 
 			var dh = this.totalWidth - this.lastTotalWidth
 
-
-			this.X[0].width += dh
+			
+			this.X[0].width += dh 
 			this.X[1].width += dh
-			this.X[2].width += dh
+				
 			this.Z[0].width += dh
 			this.Z[1].width += dh
 			this.Z[2].width += dh
 
 			this.lastTotalWidth = this.totalWidth
-
+		
 		},
 
 		changeTotalDepth: function () {
@@ -286,6 +289,8 @@ var app= new Vue ({
 			var dh = this.totalDepth - this.lastTotalDepth
 
 			this.Y[0].width += dh
+			this.Y[1].width += dh
+			this.Y[2].width += dh
 			this.Z[0].height += dh
 			this.Z[1].height += dh
 			this.Z[2].height += dh
@@ -319,10 +324,14 @@ var app= new Vue ({
 				if(med.color == 'black')
 
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
-
+				
 				if(med.color == 'other')
-
+				
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+
+				if(med.color == 'nordex')
+				
+					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 
 			}
 			for (var i = 0; i < this.Y.length; i++) {
@@ -335,10 +344,14 @@ var app= new Vue ({
 				if(med.color == 'black')
 
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
-
+				
 				if(med.color == 'other')
-
+				
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+
+				if(med.color == 'nordex')
+				
+					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 
 			}
 			for (var i = 0; i < this.Z.length; i++) {
@@ -351,10 +364,14 @@ var app= new Vue ({
 				if(med.color == 'black')
 
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
-
+				
 				if(med.color == 'other')
-
+				
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+
+				if(med.color == 'nordex')
+				
+					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 
 			}
 		},
@@ -383,15 +400,13 @@ var app= new Vue ({
 	        var piece = this.Z[i]
 	        this.totalCostZ += piece.cost
 	      }
-
-	      this.totalCost = this.totalCostX + this.totalCostY + this.totalCostZ
 	    },
 
 
 	    calculateExtras: function (){
 	    	for (var i = 0; i < this.Extras.length; i++) {
 				var med = this.Extras[i]
-
+				
 				med.cost = med.costo * med.cantidad
 
 			}
@@ -400,30 +415,12 @@ var app= new Vue ({
 
 	    calculateTotalExtras: function (){
 	    	this.totalCostExtras = 0
-
-	      for (var i = 0; i < this.Extras.length; i++) {
+			
+	      for (var i = 0; i < this.Extras.length - 1; i++) {
 	        var piece = this.Extras[i]
 	        this.totalCostExtras += piece.cost
 	      }
-
-	      this.totalPrice = this.totalCost + this.totalCostExtras
-
-	      if (this.original) {
-	      	this.originalPrice = this.totalPrice
-	      	this.original = false
-	      } else {
-	      	this.aumento = this.totalPrice - this.originalPrice
-	      }
-
 	    },
-	},
-
-
-
-})
-
-
-
 	//     calculateTotalArea: function () {
 	//       this.totalAreaX = 0
 	//       this.totalAreaY = 0
@@ -441,3 +438,7 @@ var app= new Vue ({
 	//         this.totalAreaZ += piece.area
 	//       }
 	//     },
+	},
+
+
+})
