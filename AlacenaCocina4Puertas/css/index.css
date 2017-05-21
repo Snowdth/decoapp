@@ -1,0 +1,68 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+input {
+  width: 80px;
+  text-align: center;
+  font-size: 100%;
+  outline: 0;
+  background-color: transparent;
+}
+.input-formulario {
+  width: 80px;
+  text-align: center;
+  font-size: 100%;
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+h5 {
+  margin: 10px 0;
+}
+p {
+  margin: 0;
+}
+.medidas {
+  display: flex;
+}
+.a,
+.b,
+.c {
+  width: 20%;
+  margin: 10px;
+}
+.content ul {
+  padding: 0 7px;
+}
+.width-letra {
+  display: inline-block;
+  width: 75px;
+}
+.title-section h3 {
+  display: inline-block;
+  margin-right: 20px;
+}
+.title-section input {
+  width: 50px;
+  margin-right: 10px;
+}
+.inline-block {
+  display: inline-block;
+}
+.none {
+  display: none;
+}
+.top-30 {
+  margin-top: 30px;
+}
