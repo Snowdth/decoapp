@@ -175,7 +175,7 @@ var app= new Vue ({
 
 			this.X[0].height += dh
 			// this.X[1].height += dh
-			this.X[2].width += dh
+			this.X[2].height+= dh
 			this.Y[0].height += dh
 			this.Y[1].height += dh
 
