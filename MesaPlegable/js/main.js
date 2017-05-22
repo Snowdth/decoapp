@@ -14,7 +14,13 @@ var app= new Vue ({
 		totalCostX: 0,
 		totalCostY: 0,
 		totalCostZ: 0,
+		totalCost: 0,
 		totalCostExtras: 0,
+		totalPrice: 0,
+
+		original: true,
+		originalPrice: 0,
+		aumento: 0,
 
 		totalAreaX: 0,
 		totalAreaY: 0,
@@ -63,7 +69,7 @@ var app= new Vue ({
 				color:'white',
 				area:0,
 			},
-			{	
+			{
 				id: 2,
 				cost:0,
 				name:'Nordex',
@@ -73,7 +79,7 @@ var app= new Vue ({
 				color:'nordex',
 				area:0,
 			},
-			
+
 		],
 // SEPARACIÓN
 // SEPARACIÓN
@@ -147,7 +153,7 @@ var app= new Vue ({
 				costo:0.48,
 				cantidad:5,
 			},
-			
+
 			{
 				id: 2,
 				name:'Patines',
@@ -184,7 +190,7 @@ var app= new Vue ({
 				costo:2.50,
 				tamanoMetro:1.5,
 			},
-			
+
 		// 	{
 		// 		name:'Tiradores-Manijas',
 		// 		costo:3,
@@ -208,18 +214,18 @@ var app= new Vue ({
 		// 		costo:9,
 		// 		cantidad:2,
 		// 	},
-		
+
 		// 	{
 		// 		name:'Bisagra Chica',
 		// 		costo:0.36,
 		// 		cantidad:1,
 		// 	},
-		
-		
-		
-			
-			
-		// 
+
+
+
+
+
+		//
 		// 	{
 		// 		name:'Enchufe',
 		// 		costo:0.50,
@@ -230,7 +236,7 @@ var app= new Vue ({
 		// 		costo:1.20,
 		// 		tamañoMetro:1,
 		// 	},
-		
+
 
 		]
 
@@ -260,7 +266,7 @@ var app= new Vue ({
 			this.Y[0].height += dh
 			this.Y[1].height += dh
 			this.Y[2].height += dh
-			
+
 
 
 			this.lastTotalHeight = this.totalHeight
@@ -272,16 +278,16 @@ var app= new Vue ({
 
 			var dh = this.totalWidth - this.lastTotalWidth
 
-			
-			this.X[0].width += dh 
+
+			this.X[0].width += dh
 			this.X[1].width += dh
-				
+
 			this.Z[0].width += dh
 			this.Z[1].width += dh
 			this.Z[2].width += dh
 
 			this.lastTotalWidth = this.totalWidth
-		
+
 		},
 
 		changeTotalDepth: function () {
@@ -324,13 +330,13 @@ var app= new Vue ({
 				if(med.color == 'black')
 
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
-				
+
 				if(med.color == 'other')
-				
+
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
 
 				if(med.color == 'nordex')
-				
+
 					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 
 			}
@@ -344,13 +350,13 @@ var app= new Vue ({
 				if(med.color == 'black')
 
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
-				
+
 				if(med.color == 'other')
-				
+
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
 
 				if(med.color == 'nordex')
-				
+
 					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 
 			}
@@ -364,13 +370,13 @@ var app= new Vue ({
 				if(med.color == 'black')
 
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
-				
+
 				if(med.color == 'other')
-				
+
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
 
 				if(med.color == 'nordex')
-				
+
 					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 
 			}
@@ -400,13 +406,15 @@ var app= new Vue ({
 	        var piece = this.Z[i]
 	        this.totalCostZ += piece.cost
 	      }
+
+	      this.totalCost = this.totalCostX + this.totalCostY + this.totalCostZ
 	    },
 
 
 	    calculateExtras: function (){
 	    	for (var i = 0; i < this.Extras.length; i++) {
 				var med = this.Extras[i]
-				
+
 				med.cost = med.costo * med.cantidad
 
 			}
@@ -415,10 +423,19 @@ var app= new Vue ({
 
 	    calculateTotalExtras: function (){
 	    	this.totalCostExtras = 0
-			
+
 	      for (var i = 0; i < this.Extras.length - 1; i++) {
 	        var piece = this.Extras[i]
 	        this.totalCostExtras += piece.cost
+	      }
+
+	      this.totalPrice = this.totalCost + this.totalCostExtras
+
+	      if (this.original) {
+	      	this.originalPrice = this.totalPrice
+	      	this.original = false
+	      } else {
+	      	this.aumento = this.totalPrice - this.originalPrice
 	      }
 	    },
 	//     calculateTotalArea: function () {

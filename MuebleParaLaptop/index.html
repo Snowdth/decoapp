@@ -184,7 +184,7 @@
 
 
 							<input v-model="med.tamanoMetro" v-on:change="reCalculate">
-						</li>	
+						</li>
 						<li v-else="med.id == 7">
 							<div class="width-letra">
 								<span>Cantidad</span>
@@ -195,7 +195,7 @@
 						</li>
 
 
-						
+
 					</ul>
 				</div>
 
@@ -223,12 +223,20 @@
 				</div>
 			</div>
 
-			<div class="top-30">
-				<span>Precio</span>
-				<h5>{{totalCostX + totalCostY +totalCostZ + totalCostExtras}}</h5>
+			<div style="background: #f0f8ff;">
+				<div class="top-30 inline-block">
+					<span>Precio Original</span>
+					<h5>{{ originalPrice }}</h5>
+				</div>
+				<div class="top-30 inline-block">
+					<span>Aumento</span>
+					<h5>{{ aumento.toFixed(2) }}</h5>
+				</div>
+				<div class="top-30 inline-block">
+					<span>Precio Final</span>
+					<h5>{{ totalPrice }}</h5>
+				</div>
 			</div>
-		</div>
-
 	</div>
 
 
