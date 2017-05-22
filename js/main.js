@@ -857,8 +857,6 @@ var app= new Vue ({
 
 	}
 
-
-
 })
 
 
