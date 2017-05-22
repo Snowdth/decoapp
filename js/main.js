@@ -23,9 +23,7 @@ var app= new Vue ({
 			}
 		},
 
-		lastTotalHeight: 80,
-		lastTotalWidth: 55,
-		lastTotalDepth: 20,
+		
 
 		totalCostX: 0,
 		totalCostY: 0,
@@ -44,6 +42,9 @@ var app= new Vue ({
 				name: "Mesa Flotante Plegable",
 
 				data: {
+					lastTotalHeight: 80,
+					lastTotalWidth: 55,
+					lastTotalDepth: 20,
 
 					totalHeight: 80,
 					totalWidth: 55,
@@ -198,6 +199,9 @@ var app= new Vue ({
 				code: 2,
 				name: "Mueble Despensero Multiusos",
 				data: {
+					lastTotalHeight: 140,
+					lastTotalWidth: 30,
+					lastTotalDepth: 30,
 
 					totalHeight: 140,
 					totalWidth: 30,
@@ -347,7 +351,7 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								{id: 2, prop: 1, type: 'normal'}
+								
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -357,18 +361,289 @@ var app= new Vue ({
 						},
 						depth: {
 							y: [
-								{id: 0, prop: 1, type: 'normal'}
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+								{id: 2, prop: 0.5, type: 'normal'}
 							],
 							z: [
-								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},
-								{id: 2, prop: 1, type: 'normal'}
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+								{id: 2, prop: 0.5, type: 'normal'}
 							]
 						}
 					}
 
 				}
-			}
+			},
+			{
+				code: 3,
+				name: "Mesa Plegable",
+			},
+			{
+				code: 4,
+				name: "Mueble para Laptop",
+
+				data: {
+					lastTotalHeight: 60,
+					lastTotalWidth: 45,
+					lastTotalDepth: 15,
+
+
+					totalHeight: 60,
+					totalWidth: 45,
+					totalDepth: 15,
+
+					X:[
+						{
+							id: 1,
+							cost:0,
+							name:'Puerta',
+							height:35,
+							width:45,
+							cantidad:1,
+							color:'black',
+							area:0,
+						},
+						{
+							id: 2,
+							cost:0,
+							name:'Sujetadores',
+							height:7,
+							width:41.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+			
+					Y:[
+						{
+							name:'Laterales',
+							height:60,
+							width:15,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontales',
+							height:15,
+							width:41.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+						{
+							name:'Separadores Horizontales',
+							height:15,
+							width:41.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+					Extras:[
+						{
+							name:'Bisagras Grandes',
+							costo:0.48,
+							cantidad:2,
+						},
+
+						{
+							name:'Tornillos Fijadores',
+							costo:0.18,
+							cantidad:2,
+						},
+						{
+							name:'Tarugos Naranja',
+							costo:0.08,
+							cantidad:2,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:1,
+						},
+						{
+							name:'Pistones o Bombas Hidraulicas o Brasos',
+							costo:4.50,
+							cantidad:2,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'}
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'}
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+
+			},
+			{
+				code: 5,
+				name: "Repisa de Biocuero",
+			},
+			{
+				code: 6,
+				name: "Estante Despensero",
+				data: {
+					lastTotalHeight: 180,
+					lastTotalWidth: 30,
+					lastTotalDepth: 30,
+
+					totalHeight: 180,
+					totalWidth: 30,
+					totalDepth: 30,
+
+					X:[
+						{
+							id: 1,
+							cost:0,
+							name:'Soporte',
+							height:6,
+							width:26.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							type: 'nordex',
+							id: 2,
+							cost:0,
+							name:'Nordex',
+							height:180,
+							width:30,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+
+					],
+			
+					Y:[
+						{
+							name:'Laterales',
+							height:180,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+			
+
+
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontal',
+							height:30,
+							width:26.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+						{
+							name:'Separador Horizontal',
+							height:30,
+							width:26.4,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							id: 1,
+							name:'Patines',
+							costo:0.04,
+							cantidad:4,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 1, prop: 1, type: 'normal'}
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+
 		],
 
 		furniture: null,
@@ -392,7 +667,7 @@ var app= new Vue ({
 
 		changeTotalHeight: function () {
 
-			var dh = this.furniture.data.totalHeight - this.lastTotalHeight
+			var dh = this.furniture.data.totalHeight - this.furniture.data.lastTotalHeight
 
 			var relationsx = this.furniture.data.relations.height.x
 			var relationsy = this.furniture.data.relations.height.y
@@ -400,7 +675,7 @@ var app= new Vue ({
 			for (var i = 0; i < relationsx.length; i++) {
 				var relation = relationsx[i]
 				if(relation.type == 'normal'){
-					this.furniture.data.X[relation.id].height += dh
+					this.furniture.data.X[relation.id].height += dh * relation.prop
 				}
 				if(relation.type == 'cantidad'){
 					this.furniture.data.X[relation.id].height = dh/this.furniture.data.X[relation.id].cantidad
@@ -410,16 +685,17 @@ var app= new Vue ({
 			for (var i = 0; i < relationsy.length; i++) {
 				var relation = relationsy[i]
 				if(relation.type == 'normal'){
-					this.furniture.data.Y[relation.id].height += dh
+					this.furniture.data.Y[relation.id].height += dh * relation.prop
 				}
+				
 			}
 
-			this.lastTotalHeight = this.furniture.data.totalHeight
+			this.furniture.data.lastTotalHeight = this.furniture.data.totalHeight
 		},
 
 		changeTotalWidth: function() {
 
-			var dh = this.furniture.data.totalWidth - this.lastTotalWidth
+			var dh = this.furniture.data.totalWidth - this.furniture.data.lastTotalWidth
 
 			var relationsx = this.furniture.data.relations.width.x
 			var relationsz = this.furniture.data.relations.width.z
@@ -427,23 +703,23 @@ var app= new Vue ({
 			for (var i = 0; i < relationsx.length; i++) {
 				var relation = relationsx[i]
 				if(relation.type == 'normal'){
-					this.furniture.data.X[relation.id].width += dh
+					this.furniture.data.X[relation.id].width += dh * relation.prop
 				}
 			}
 
 			for (var i = 0; i < relationsz.length; i++) {
 				var relation = relationsz[i]
 				if(relation.type == 'normal'){
-					this.furniture.data.Z[relation.id].width += dh
+					this.furniture.data.Z[relation.id].width += dh * relation.prop
 				}
 			}
 
-			this.lastTotalWidth = this.furniture.data.totalWidth
+			this.furniture.data.lastTotalWidth = this.furniture.data.totalWidth
 		},
 
 		changeTotalDepth: function () {
 
-			var dh = this.furniture.data.totalDepth - this.lastTotalDepth
+			var dh = this.furniture.data.totalDepth - this.furniture.data.lastTotalDepth
 
 			var relationsy = this.furniture.data.relations.depth.y
 			var relationsz = this.furniture.data.relations.depth.z
@@ -451,18 +727,18 @@ var app= new Vue ({
 			for (var i = 0; i < relationsy.length; i++) {
 				var relation = relationsy[i]
 				if(relation.type == 'normal'){
-					this.furniture.data.Y[relation.id].width += dh
+					this.furniture.data.Y[relation.id].width += dh * relation.prop
 				}
 			}
 
 			for (var i = 0; i < relationsz.length; i++) {
 				var relation = relationsz[i]
 				if(relation.type == 'normal'){
-					this.furniture.data.Z[relation.id].height += dh
+					this.furniture.data.Z[relation.id].height += dh * relation.prop
 				}
 			}
 
-			this.lastTotalDepth = this.furniture.data.totalDepth
+			this.furniture.data.lastTotalDepth = this.furniture.data.totalDepth
 		},
 
 		reCalculate: function() {
