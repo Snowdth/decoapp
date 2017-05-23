@@ -199,6 +199,10 @@ var app= new Vue ({
 			{
 				code: 2,
 				name: "Mueble Despensero Multiusos",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 140,
 					lastTotalWidth: 30,
@@ -379,10 +383,16 @@ var app= new Vue ({
 			{
 				code: 3,
 				name: "Mesa Plegable",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 			},
 			{
 				code: 4,
 				name: "Mueble para Laptop",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 
 				data: {
 					lastTotalHeight: 60,
@@ -520,10 +530,17 @@ var app= new Vue ({
 			{
 				code: 5,
 				name: "Repisa de Biocuero",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 			},
 			{
 				code: 6,
 				name: "Estante Despensero",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 180,
 					lastTotalWidth: 30,
@@ -647,6 +664,10 @@ var app= new Vue ({
 			{
 				code: 7,
 				name: "Centro de Entretenimiento en L",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 60,
 					lastTotalWidth: 120,
@@ -788,6 +809,10 @@ var app= new Vue ({
 			{
 				code: 8,
 				name: "Estante Cubo Doble",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 70,
 					lastTotalWidth: 35,
@@ -894,6 +919,10 @@ var app= new Vue ({
 			{
 				code: 9,
 				name: "Despensero De Cocina Puertas Bajas",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 150,
 					lastTotalWidth: 40,
@@ -1046,6 +1075,10 @@ var app= new Vue ({
 			{
 				code: 10,
 				name: "Alacena Cocina de 4 Puertas",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 50,
 					lastTotalWidth: 140,
@@ -1198,6 +1231,10 @@ var app= new Vue ({
 			{
 				code: 11,
 				name: "Alacena Cocina de 4 Puertas",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 50,
 					lastTotalWidth: 140,
@@ -1362,6 +1399,9 @@ var app= new Vue ({
 		selectFurniture: function (index) {
 			this.view = "furniture"
 			this.furniture = this.furnitures[index]
+
+			this.original = true
+			this.aumento = 0
 			this.reCalculate()
 		},
 
@@ -1546,6 +1586,7 @@ var app= new Vue ({
       }
 
       this.totalCost = this.totalCostX + this.totalCostY + this.totalCostZ
+      console.log('totalCost: ', this.totalCost)
     },
 
     calculateTotalExtras: function (){
@@ -1559,6 +1600,7 @@ var app= new Vue ({
       this.totalPrice = this.totalCost + this.totalCostExtras
 
       if (this.original) {
+      	console.log('original!')
       	this.originalPrice = this.totalPrice
       	this.original = false
       } else {
