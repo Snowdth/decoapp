@@ -656,7 +656,7 @@ var app= new Vue ({
 					totalWidth: 120,
 					totalDepth: 30,
 
-					
+
 					X:[
 						{
 							name: 'no existe X',
@@ -702,7 +702,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 
 
@@ -797,7 +797,7 @@ var app= new Vue ({
 					totalWidth: 35,
 					totalDepth: 35,
 
-					
+
 					X:[
 						{
 							id: 1,
@@ -811,7 +811,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 
 					Y:[
 						{
@@ -880,7 +880,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -903,7 +903,7 @@ var app= new Vue ({
 					totalWidth: 40,
 					totalDepth: 32,
 
-					
+
 					X:[
 						{
 							cost:0,
@@ -935,7 +935,7 @@ var app= new Vue ({
 						},
 
 					],
-				
+
 
 					Y:[
 						{
@@ -1031,7 +1031,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1055,7 +1055,7 @@ var app= new Vue ({
 					totalWidth: 140,
 					totalDepth: 31,
 
-					
+
 					X:[
 						{
 							cost:0,
@@ -1086,7 +1086,7 @@ var app= new Vue ({
 							area:0,
 						},
 					],
-			 
+
 					Y:[
 						{
 							name:'Laterales',
@@ -1106,7 +1106,7 @@ var app= new Vue ({
 						},
 					],
 
-			 
+
 
 					Z:[
 						{
@@ -1133,7 +1133,7 @@ var app= new Vue ({
 							costo:1.15,
 							cantidad:8,
 						},
-						
+
 						{
 							name:'Tiradores-Manijas',
 							costo:3,
@@ -1177,14 +1177,14 @@ var app= new Vue ({
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'x1.8/cantidad'},
-								
+
 							]
 						},
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1207,7 +1207,7 @@ var app= new Vue ({
 					totalWidth: 140,
 					totalDepth: 31,
 
-					
+
 					X:[
 						{
 							cost:0,
@@ -1238,7 +1238,7 @@ var app= new Vue ({
 							area:0,
 						},
 					],
-			 
+
 					Y:[
 						{
 							name:'Laterales',
@@ -1258,7 +1258,7 @@ var app= new Vue ({
 						},
 					],
 
-			 
+
 
 					Z:[
 						{
@@ -1285,7 +1285,7 @@ var app= new Vue ({
 							costo:1.15,
 							cantidad:8,
 						},
-						
+
 						{
 							name:'Tiradores-Manijas',
 							costo:3,
@@ -1329,14 +1329,14 @@ var app= new Vue ({
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'x1.8/cantidad'},
-								
+
 							]
 						},
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1362,6 +1362,7 @@ var app= new Vue ({
 		selectFurniture: function (index) {
 			this.view = "furniture"
 			this.furniture = this.furnitures[index]
+			this.reCalculate()
 		},
 
 		back: function () {
@@ -1383,7 +1384,7 @@ var app= new Vue ({
 				if(relation.type == 'x0.36'){
 					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.36
 				}
-				
+
 			}
 
 			for (var i = 0; i < relationsy.length; i++) {
