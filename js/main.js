@@ -1196,109 +1196,99 @@ var app= new Vue ({
 			},
 			{
 				code: 11,
-				name: "Alacena Cocina de 4 Puertas",
+				name: "Biblioteca Estante 2 Puertas",
 				data: {
-					lastTotalHeight: 50,
-					lastTotalWidth: 140,
-					lastTotalDepth: 31,
+					lastTotalHeight: 180,
+					lastTotalWidth: 75,
+					lastTotalDepth: 30,
 
-					totalHeight: 50,
-					totalWidth: 140,
-					totalDepth: 31,
+					totalHeight: 180,
+					totalWidth: 75,
+					totalDepth: 30,
 
 					
 					X:[
 						{
+							id: 1,
 							cost:0,
-							name:'Puertas',
-							height:50,
-							width:34.7,
-							cantidad:4,
-							color:'white',
-							area:0,
-						},
-						{
-							cost:0,
-							name:'Sujetador Espalda',
-							height:7,
-							width:136.4,
+							name:'Puertas Bajas',
+							height:52,
+							width:37.4,
 							cantidad:2,
 							color:'white',
 							area:0,
 						},
 						{
-							type: 'nordex',
+							id: 2,
 							cost:0,
 							name:'Nordex',
-							height:50,
-							width:140,
+							height:180,
+							width:75,
 							cantidad:1,
 							color:'nordex',
 							area:0,
 						},
-					],
-			 
-					Y:[
 						{
-							name:'Laterales',
-							height:46.4,
-							width:31,
-							cantidad:2,
-							color:'white',
-							area:0,
-						},
-						{
-							name:'Medio',
-							height:46.4,
-							width:29.2,
+							id: 3,
+							cost:0,
+							name:'Soporte Vertical',
+							height:7,
+							width:71.4,
 							cantidad:1,
 							color:'white',
 							area:0,
 						},
+
+					],
+			 
+
+					Y:[
+						{
+							name:'Laterales',
+							height:180,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
 					],
 
-			 
 
 					Z:[
 						{
-							name:'Parte de Superior e inferior',
-							height:31,
-							width:140,
-							cantidad:2,
-							color:'white',
-							area:0,
-						},
-						{
-							name:'Medio',
-							height:29,
-							width:67.3,
+							name:'Superior e Inferior Horizontales',
+							height:30,
+							width:71.4,
 							cantidad:2,
 							color:'white',
 							area:0,
 						},
 
+						{
+							name:'Separadores Horizontales',
+							height:30,
+							width:71.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+
 					],
+
+
+
 					Extras:[
 						{
-							name:'Bisagras Cangrejo',
-							costo:1.15,
-							cantidad:8,
-						},
-						
-						{
-							name:'Tiradores-Manijas',
-							costo:3,
+							id: 1,
+							name:'Bisagra Grandes',
+							costo:0.48,
 							cantidad:4,
 						},
 						{
-							name:'Tarugos Naranjas',
-							costo:0.08,
-							cantidad:6,
-						},
-						{
-							name:'Tornillos Fijadores',
-							costo:0.18,
-							cantidad:6,
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:2,
 						},
 						{
 							name:'Tornillos',
@@ -1310,32 +1300,28 @@ var app= new Vue ({
 					relations: {
 						height: {
 							x: [
-								{id: 0, prop: 1, type: 'normal'},
-								{id: 2, prop: 1, type: 'normal'},
+								{id: 0, prop: 1, type: 'x0.29'},
+								{id: 1, prop: 1, type: 'normal'},
 							],
 							y: [
-
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},
 							]
 						},
 						width: {
 							x: [
-								{id: 0, prop: 1, type: 'x0.1/cantidad'},
+								{id: 0, prop: 0.5, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'x1.8/cantidad'},
+								{id: 1, prop: 1, type: 'normal'},
 								
 							]
 						},
 						depth: {
 							y: [
-								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},
-								
+								{id: 0, prop: 1, type: 'normal'},						
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1346,6 +1332,169 @@ var app= new Vue ({
 
 				}
 			},
+			{
+				code: 12,
+				name: "Velador Flotante",			
+			},
+			{
+				code: 13,
+				name: "Centro De Entretenimiento Led",
+				data: {
+					lastTotalHeight: 40,
+					lastTotalWidth: 130,
+					lastTotalDepth: 37,
+
+					totalHeight: 40,
+					totalWidth: 130,
+					totalDepth: 37,
+
+					X:[
+						{
+							cost:0,
+							name:'Puertas Superiores',
+							height:15,
+							width:64.8,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Puertas Inferiores',
+							height:10,
+							width:64.8,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Sujetadores',
+							height:7,
+							width:126.4,
+							cantidad:2,
+							color:'black',
+							area:0,
+						},
+
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:36.4,
+							width:37,
+							cantidad:2,
+							color:'black',
+							area:0,
+						},
+						{
+							name:'Separacion vertical',
+							height:36.4,
+							width:32.2,
+							cantidad:1,
+							color:'black',
+							area:0,
+						},
+					],
+
+			
+					Z:[
+						{
+							name:'Superior e Inferior',
+							height:37,
+							width:130,
+							cantidad:2,
+							color:'black',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Par de Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:8,
+						},
+
+						{
+							name:'Fluorescente LED',
+							costo:9,
+							cantidad:1,
+						},
+						{
+							name:'Cable',
+							costo:1.20,
+							cantidad:3,
+
+						},
+						{
+							name:'Enchufe',
+							costo:0.50,
+							cantidad:1,
+						},
+						{
+							name:'Pistones o Bombas Hidraulicas o Brasos',
+							costo:4.50,
+							cantidad:2,
+						},
+						{
+							name:'Tornillos Fijadores',
+							costo:0.18,
+							cantidad:4,
+						},
+						{
+							name:'Tarugos Naranja',
+							costo:0.08,
+							cantidad:4,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: .5, type: 'normal'},
+								{id: 1, prop: .5, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},						
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+
 		],
 
 		furniture: null,
@@ -1381,6 +1530,9 @@ var app= new Vue ({
 				}
 				if(relation.type == 'x0.36'){
 					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.36
+				}
+				if(relation.type == 'x0.29'){
+					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.29
 				}
 				
 			}
