@@ -17,13 +17,11 @@ var app= new Vue ({
 				price: 200,
 				centimeterPrice: 0.003830243603493182
 			},
-			norders: {
+			nordex: {
 				price: 36,
  				centimeterPrice: 0.001209352324643913
 			}
 		},
-
-		
 
 		totalCostX: 0,
 		totalCostY: 0,
@@ -40,6 +38,9 @@ var app= new Vue ({
 			{
 				code: 1,
 				name: "Mesa Flotante Plegable",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 
 				data: {
 					lastTotalHeight: 80,
@@ -198,6 +199,10 @@ var app= new Vue ({
 			{
 				code: 2,
 				name: "Mueble Despensero Multiusos",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 140,
 					lastTotalWidth: 30,
@@ -209,7 +214,6 @@ var app= new Vue ({
 
 					X:[
 						{
-							id: 1,
 							cost:0,
 							name:'Puerta',
 							height:136.4,
@@ -220,7 +224,6 @@ var app= new Vue ({
 						},
 						{
 							type: 'nordex',
-							id: 2,
 							cost:0,
 							name:'Nordex',
 							height:140,
@@ -290,44 +293,37 @@ var app= new Vue ({
 
 					Extras:[
 						{
-							id: 1,
 							name:'Bisagra Grandes',
 							costo:0.48,
 							cantidad:5,
 						},
 
 						{
-							id: 2,
 							name:'Patines',
 							costo:0.04,
 							cantidad:4,
 						},
 						{
-							id: 3,
 							name:'Sujetadores',
 							costo:0.15,
 							cantidad:2,
 						},
 						{
-							id: 4,
 							name:'Alcallatas',
 							costo:0.06,
 							cantidad:2,
 						},
 						{
-							id: 5,
 							name:'Tarugos de Madera',
 							costo:0.08,
 							cantidad:2,
 						},
 						{
-							id: 6,
 							name:'Tornillos',
 							costo:0.047,
 							cantidad:52,
 						},
 						{
-							id: 7,
 							name:'Varillas',
 							costo:2.50,
 							label: "Metro",
@@ -351,7 +347,7 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -378,10 +374,16 @@ var app= new Vue ({
 			{
 				code: 3,
 				name: "Mesa Plegable",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 			},
 			{
 				code: 4,
 				name: "Mueble para Laptop",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 
 				data: {
 					lastTotalHeight: 60,
@@ -416,7 +418,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 					Y:[
 						{
 							name:'Laterales',
@@ -428,7 +430,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 
 
@@ -519,10 +521,17 @@ var app= new Vue ({
 			{
 				code: 5,
 				name: "Repisa de Biocuero",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 			},
 			{
 				code: 6,
 				name: "Estante Despensero",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 180,
 					lastTotalWidth: 30,
@@ -556,7 +565,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 					Y:[
 						{
 							name:'Laterales',
@@ -569,7 +578,7 @@ var app= new Vue ({
 
 					],
 
-			
+
 
 
 
@@ -623,7 +632,7 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -646,6 +655,10 @@ var app= new Vue ({
 			{
 				code: 7,
 				name: "Centro de Entretenimiento en L",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 60,
 					lastTotalWidth: 120,
@@ -655,7 +668,7 @@ var app= new Vue ({
 					totalWidth: 120,
 					totalDepth: 30,
 
-					
+
 					X:[
 						{
 							name: 'no existe X',
@@ -701,7 +714,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 
 
@@ -787,6 +800,10 @@ var app= new Vue ({
 			{
 				code: 8,
 				name: "Estante Cubo Doble",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 70,
 					lastTotalWidth: 35,
@@ -796,7 +813,7 @@ var app= new Vue ({
 					totalWidth: 35,
 					totalDepth: 35,
 
-					
+
 					X:[
 						{
 							id: 1,
@@ -810,7 +827,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 
 					Y:[
 						{
@@ -879,7 +896,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -893,6 +910,10 @@ var app= new Vue ({
 			{
 				code: 9,
 				name: "Despensero De Cocina Puertas Bajas",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 150,
 					lastTotalWidth: 40,
@@ -902,7 +923,7 @@ var app= new Vue ({
 					totalWidth: 40,
 					totalDepth: 32,
 
-					
+
 					X:[
 						{
 							cost:0,
@@ -934,7 +955,7 @@ var app= new Vue ({
 						},
 
 					],
-				
+
 
 					Y:[
 						{
@@ -1030,7 +1051,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1045,6 +1066,10 @@ var app= new Vue ({
 			{
 				code: 10,
 				name: "Alacena Cocina de 4 Puertas",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 50,
 					lastTotalWidth: 140,
@@ -1054,7 +1079,7 @@ var app= new Vue ({
 					totalWidth: 140,
 					totalDepth: 31,
 
-					
+
 					X:[
 						{
 							cost:0,
@@ -1085,7 +1110,7 @@ var app= new Vue ({
 							area:0,
 						},
 					],
-			 
+
 					Y:[
 						{
 							name:'Laterales',
@@ -1105,7 +1130,7 @@ var app= new Vue ({
 						},
 					],
 
-			 
+
 
 					Z:[
 						{
@@ -1132,7 +1157,7 @@ var app= new Vue ({
 							costo:1.15,
 							cantidad:8,
 						},
-						
+
 						{
 							name:'Tiradores-Manijas',
 							costo:3,
@@ -1176,14 +1201,14 @@ var app= new Vue ({
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'x1.8/cantidad'},
-								
+
 							]
 						},
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1196,7 +1221,13 @@ var app= new Vue ({
 			},
 			{
 				code: 11,
+
 				name: "Biblioteca Estante 2 Puertas",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 180,
 					lastTotalWidth: 75,
@@ -1206,7 +1237,7 @@ var app= new Vue ({
 					totalWidth: 75,
 					totalDepth: 30,
 
-					
+
 					X:[
 						{
 							id: 1,
@@ -1240,7 +1271,7 @@ var app= new Vue ({
 						},
 
 					],
-			 
+
 
 					Y:[
 						{
@@ -1339,6 +1370,11 @@ var app= new Vue ({
 			{
 				code: 13,
 				name: "Centro De Entretenimiento Led",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
 				data: {
 					lastTotalHeight: 40,
 					lastTotalWidth: 130,
@@ -1430,6 +1466,7 @@ var app= new Vue ({
 							name:'Cable',
 							costo:1.20,
 							cantidad:3,
+							label: "Metro",
 
 						},
 						{
@@ -1462,8 +1499,223 @@ var app= new Vue ({
 					relations: {
 						height: {
 							x: [
-								{id: 0, prop: .5, type: 'normal'},
-								{id: 1, prop: .5, type: 'normal'},
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 14,
+				name: "Estante Repisa Flotante Decoracion Sala",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 75,
+					lastTotalWidth: 75,
+					lastTotalDepth: 17,
+
+					totalHeight: 75,
+					totalWidth: 75,
+					totalDepth: 17,
+
+					X:[
+						{
+							cost:0,
+							name:'Melaminas X',
+							height:22.6,
+							width:17,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Melaminas Y',
+							height:22.6,
+							width:17,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+					Z:[
+						{
+							name:'Melaminas Z',
+							height:17,
+							width:60,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+
+
+					Extras:[
+						
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: '/cantidad'},
+							],
+							y: [
+								{id: 0, prop: 1, type: '/cantidad'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 15,
+				name: "Mueble Flotante Para Microondas",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 42,
+					lastTotalWidth: 64,
+					lastTotalDepth: 41,
+
+					totalHeight: 42,
+					totalWidth: 64,
+					totalDepth: 41,
+
+					X:[
+						{
+							type:'nordex',
+							cost:0,
+							name:'Fondo',
+							height:38.4,
+							width:60.4,
+							cantidad:3,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Sujetadores',
+							height:8,
+							width:60.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:42,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+					Z:[
+						{
+							name:'Superior Horizontal',
+							height:30,
+							width:60.4,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Inferior Horizontal',
+							height:41,
+							width:60.4,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+
+
+					Extras:[
+						
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1471,19 +1723,17 @@ var app= new Vue ({
 						},
 						width: {
 							x: [
-								{id: 0, prop: 0.5, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},
-								{id: 2, prop: 1, type: 'normal'},
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'}
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},
-								
+								{id: 1, prop: 1, type: 'normal'}
 							]
 						},
 						depth: {
 							y: [
-								{id: 0, prop: 1, type: 'normal'},						
+								{id: 0, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1494,6 +1744,347 @@ var app= new Vue ({
 
 				}
 			},
+			{
+				code: 16,
+				name: "Biblioteca Librero 4 Estantes",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 150,
+					lastTotalWidth: 50,
+					lastTotalDepth: 25,
+
+					totalHeight: 150,
+					totalWidth: 50,
+					totalDepth: 25,
+
+					X:[
+						{
+							type: 'nordex',
+							cost:0,
+							name:'Nordex',
+							height:145,
+							width:30,
+							cantidad:3,
+							color:'nordex',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:150,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontal',
+							height:25,
+							width:46.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separadores Horizontales',
+							height:25,
+							width:46.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+
+
+					Extras:[
+						
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'}
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 17,
+				name: "Comoda 4 Cajones Cerezo",
+			},
+			{
+				code: 18,
+				name: "Velador Mesa de Noche",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 70,
+					lastTotalWidth: 44,
+					lastTotalDepth: 30,
+
+					totalHeight: 70,
+					totalWidth: 44,
+					totalDepth: 30,
+
+					X:[
+						{
+							cost:0,
+							name:'nada',
+							height:0,
+							width:0,
+							cantidad:0,
+							color:'nordex',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:66.4,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontal',
+							height:30,
+							width:44,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separadores Horizontales',
+							height:22,
+							width:22,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Ruedas',
+							costo:3.50,
+							cantidad:4,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'width/2'}
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 19,
+				name: "Escritorio Flotante Repisa Biblioteca Organizador",
+			},
+			{
+				code: 20,
+				name: "Estante Cubo Flotante",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 25,
+					lastTotalWidth: 120,
+					lastTotalDepth: 25,
+
+					totalHeight: 25,
+					totalWidth: 120,
+					totalDepth: 25,
+
+					X:[
+						{
+							cost:0,
+							name:'Sujetador',
+							height:25,
+							width:120,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:25,
+							width:23.2,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Divisores',
+							height:25,
+							width:23.2,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Inferior Horizontal',
+							height:25,
+							width:120,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+						
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			
+
+
+
 
 		],
 
@@ -1510,6 +2101,10 @@ var app= new Vue ({
 		selectFurniture: function (index) {
 			this.view = "furniture"
 			this.furniture = this.furnitures[index]
+
+			this.original = true
+			this.aumento = 0
+			this.reCalculate()
 		},
 
 		back: function () {
@@ -1534,7 +2129,10 @@ var app= new Vue ({
 				if(relation.type == 'x0.29'){
 					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.29
 				}
-				
+				if(relation.type == '/cantidad'){
+					this.furniture.data.X[relation.id].height += dh / this.furniture.data.X[relation.id].cantidad
+				}
+
 			}
 
 			for (var i = 0; i < relationsy.length; i++) {
@@ -1542,7 +2140,10 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.Y[relation.id].height += dh * relation.prop
 				}
-				
+				if(relation.type == '/cantidad'){
+					this.furniture.data.Y[relation.id].height += dh / this.furniture.data.Y[relation.id].cantidad
+				}
+
 			}
 
 			this.furniture.data.lastTotalHeight = this.furniture.data.totalHeight
@@ -1572,6 +2173,9 @@ var app= new Vue ({
 				}
 				if(relation.type == 'x1.8/cantidad'){
 					this.furniture.data.Z[relation.id].width = (this.furniture.data.totalWidth -(1.8 * (this.furniture.data.Z[relation.id].cantidad + 1)))/ this.furniture.data.Z[relation.id].cantidad
+				}
+				if(relation.type == 'width/2'){
+					this.furniture.data.Z[relation.id].width = this.furniture.data.totalWidth/2
 				}
 			}
 
@@ -1637,6 +2241,9 @@ var app= new Vue ({
 				if(med.color == 'other'){
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
 				}
+				if(med.color == 'nordex'){
+					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
+				}
 			}
 
 			for (var i = 0; i < this.furniture.data.Y.length; i++) {
@@ -1650,6 +2257,9 @@ var app= new Vue ({
 				if(med.color == 'other'){
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
 				}
+				if(med.color == 'nordex'){
+					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
+				}
 			}
 
 			for (var i = 0; i < this.furniture.data.Z.length; i++) {
@@ -1662,6 +2272,9 @@ var app= new Vue ({
 				}
 				if(med.color == 'other'){
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+				}
+				if(med.color == 'nordex'){
+					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
 				}
 			}
 		},
@@ -1696,6 +2309,7 @@ var app= new Vue ({
       }
 
       this.totalCost = this.totalCostX + this.totalCostY + this.totalCostZ
+      console.log('totalCost: ', this.totalCost)
     },
 
     calculateTotalExtras: function (){
@@ -1709,6 +2323,7 @@ var app= new Vue ({
       this.totalPrice = this.totalCost + this.totalCostExtras
 
       if (this.original) {
+      	console.log('original!')
       	this.originalPrice = this.totalPrice
       	this.original = false
       } else {
@@ -1716,6 +2331,12 @@ var app= new Vue ({
       }
     }
 
+	},
+
+	filters: {
+    decimal: function (number) {
+			return number.toFixed(2)
+		}
 	}
 
 })

@@ -74,7 +74,7 @@ var app= new Vue ({
 				height:8,
 				width:60.4,
 				cantidad:3,
-				color:'nordex',
+				color:'white',
 				area:0,
 			},
 		],
