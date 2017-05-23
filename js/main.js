@@ -23,8 +23,6 @@ var app= new Vue ({
 			}
 		},
 
-		
-
 		totalCostX: 0,
 		totalCostY: 0,
 		totalCostZ: 0,
@@ -40,6 +38,9 @@ var app= new Vue ({
 			{
 				code: 1,
 				name: "Mesa Flotante Plegable",
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
 
 				data: {
 					lastTotalHeight: 80,
@@ -351,7 +352,7 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -416,7 +417,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 					Y:[
 						{
 							name:'Laterales',
@@ -428,7 +429,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 
 
@@ -556,7 +557,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 					Y:[
 						{
 							name:'Laterales',
@@ -569,7 +570,7 @@ var app= new Vue ({
 
 					],
 
-			
+
 
 
 
@@ -623,7 +624,7 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -1390,7 +1391,7 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.Y[relation.id].height += dh * relation.prop
 				}
-				
+
 			}
 
 			this.furniture.data.lastTotalHeight = this.furniture.data.totalHeight
@@ -1564,6 +1565,12 @@ var app= new Vue ({
       }
     }
 
+	},
+
+	filters: {
+    decimal: function (number) {
+			return number.toFixed(2)
+		}
 	}
 
 })
