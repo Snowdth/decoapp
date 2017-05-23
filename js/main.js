@@ -643,7 +643,709 @@ var app= new Vue ({
 
 				}
 			},
+			{
+				code: 7,
+				name: "Centro de Entretenimiento en L",
+				data: {
+					lastTotalHeight: 60,
+					lastTotalWidth: 120,
+					lastTotalDepth: 30,
 
+					totalHeight: 60,
+					totalWidth: 120,
+					totalDepth: 30,
+
+					
+					X:[
+						{
+							name: 'no existe X',
+							height:0,
+							width:0,
+							cantidad:0,
+							color:'white',
+							area:0,
+						}
+					],
+					Y:[
+						{
+							name:'Lateral 1',
+							height:56.4,
+							width:30,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral 2',
+							height:28.2,
+							width:30,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral 3',
+							height:26.4,
+							width:30,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral 4',
+							height:26.4,
+							width:30,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+
+
+					Z:[
+						{
+							name:'Superior peque'+String.fromCharCode(241)+'o',
+							height:30,
+							width:30,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+						{
+							name:'Superior Largo',
+							height:30,
+							width:91.8,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Inferior',
+							height:30,
+							width:120,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:16,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+								{id: 2, prop: 0.5, type: 'normal'},
+								{id: 3, prop: 0.5, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 8,
+				name: "Estante Cubo Doble",
+				data: {
+					lastTotalHeight: 70,
+					lastTotalWidth: 35,
+					lastTotalDepth: 35,
+
+					totalHeight: 70,
+					totalWidth: 35,
+					totalDepth: 35,
+
+					
+					X:[
+						{
+							id: 1,
+							cost:0,
+							name:'nothing',
+							height:0,
+							width:0,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:70,
+							width:35,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontal',
+							height:35,
+							width:31.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+						{
+							name:'Separador Horizontal',
+							height:35,
+							width:31.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 9,
+				name: "Despensero De Cocina Puertas Bajas",
+				data: {
+					lastTotalHeight: 150,
+					lastTotalWidth: 40,
+					lastTotalDepth: 32,
+
+					totalHeight: 150,
+					totalWidth: 40,
+					totalDepth: 32,
+
+					
+					X:[
+						{
+							cost:0,
+							name:'Puerta',
+							height:53,
+							width:40,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							type: 'nordex',
+							cost:0,
+							name:'Nordex',
+							height:150,
+							width:30,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Tabla peque'+String.fromCharCode(241)+'a vertical',
+							height:6,
+							width:36.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+					],
+				
+
+					Y:[
+						{
+							name:'Laterales ',
+							height:150,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+					Z:[
+						{
+							name:'Superior e Inferior de la Puerta',
+							height:30,
+							width:36.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+						{
+							name:'Superior del Estante ',
+							height:30,
+							width:36.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separadores Horizontales ',
+							height:37,
+							width:36.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:2,
+						},
+
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:1,
+						},
+						{
+							name:'Patines',
+							costo:0.04,
+							cantidad:4,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'x0.36'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							y: [
+
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 10,
+				name: "Alacena Cocina de 4 Puertas",
+				data: {
+					lastTotalHeight: 50,
+					lastTotalWidth: 140,
+					lastTotalDepth: 31,
+
+					totalHeight: 50,
+					totalWidth: 140,
+					totalDepth: 31,
+
+					
+					X:[
+						{
+							cost:0,
+							name:'Puertas',
+							height:50,
+							width:34.7,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Sujetador Espalda',
+							height:7,
+							width:136.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							type: 'nordex',
+							cost:0,
+							name:'Nordex',
+							height:50,
+							width:140,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+					],
+			 
+					Y:[
+						{
+							name:'Laterales',
+							height:46.4,
+							width:31,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Medio',
+							height:46.4,
+							width:29.2,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
+
+			 
+
+					Z:[
+						{
+							name:'Parte de Superior e inferior',
+							height:31,
+							width:140,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Medio',
+							height:29,
+							width:67.3,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+					Extras:[
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:8,
+						},
+						
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:4,
+						},
+						{
+							name:'Tarugos Naranjas',
+							costo:0.08,
+							cantidad:6,
+						},
+						{
+							name:'Tornillos Fijadores',
+							costo:0.18,
+							cantidad:6,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							y: [
+
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'x0.1/cantidad'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'x1.8/cantidad'},
+								
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 11,
+				name: "Alacena Cocina de 4 Puertas",
+				data: {
+					lastTotalHeight: 50,
+					lastTotalWidth: 140,
+					lastTotalDepth: 31,
+
+					totalHeight: 50,
+					totalWidth: 140,
+					totalDepth: 31,
+
+					
+					X:[
+						{
+							cost:0,
+							name:'Puertas',
+							height:50,
+							width:34.7,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Sujetador Espalda',
+							height:7,
+							width:136.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							type: 'nordex',
+							cost:0,
+							name:'Nordex',
+							height:50,
+							width:140,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+					],
+			 
+					Y:[
+						{
+							name:'Laterales',
+							height:46.4,
+							width:31,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Medio',
+							height:46.4,
+							width:29.2,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
+
+			 
+
+					Z:[
+						{
+							name:'Parte de Superior e inferior',
+							height:31,
+							width:140,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Medio',
+							height:29,
+							width:67.3,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+					Extras:[
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:8,
+						},
+						
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:4,
+						},
+						{
+							name:'Tarugos Naranjas',
+							costo:0.08,
+							cantidad:6,
+						},
+						{
+							name:'Tornillos Fijadores',
+							costo:0.18,
+							cantidad:6,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							y: [
+
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'x0.1/cantidad'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'x1.8/cantidad'},
+								
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
 		],
 
 		furniture: null,
@@ -677,9 +1379,10 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.X[relation.id].height += dh * relation.prop
 				}
-				if(relation.type == 'cantidad'){
-					this.furniture.data.X[relation.id].height = dh/this.furniture.data.X[relation.id].cantidad
+				if(relation.type == 'x0.36'){
+					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.36
 				}
+				
 			}
 
 			for (var i = 0; i < relationsy.length; i++) {
@@ -705,12 +1408,18 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.X[relation.id].width += dh * relation.prop
 				}
+				if(relation.type == 'x0.1/cantidad'){
+					this.furniture.data.X[relation.id].width = (this.furniture.data.totalWidth -(0.1 * this.furniture.data.X[relation.id].cantidad))/ this.furniture.data.X[relation.id].cantidad
+				}
 			}
 
 			for (var i = 0; i < relationsz.length; i++) {
 				var relation = relationsz[i]
 				if(relation.type == 'normal'){
 					this.furniture.data.Z[relation.id].width += dh * relation.prop
+				}
+				if(relation.type == 'x1.8/cantidad'){
+					this.furniture.data.Z[relation.id].width = (this.furniture.data.totalWidth -(1.8 * (this.furniture.data.Z[relation.id].cantidad + 1)))/ this.furniture.data.Z[relation.id].cantidad
 				}
 			}
 
