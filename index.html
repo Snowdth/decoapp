@@ -20,7 +20,7 @@
 
 
 		<!-- Furniture -->
-		<section class="furniture" v-show="view == 'furniture'">
+		<section class="furniture" v-show="view == 'furniture'" >
 
 			<button v-on:click="back">atras</button>
 
@@ -93,7 +93,7 @@
 								</div>
 								<input v-model="med.width" v-on:change="reCalculate">
 							</li>
-							<li>
+							<li v-if="med.type != 'nordex'">
 								<select class="color"
 									v-model="med.color" v-on:change="reCalculate">
 									<option value="white">Blanco</option>
@@ -132,7 +132,7 @@
 								</div>
 								<input v-model="med.width" v-on:change="reCalculate">
 							</li>
-							<li>
+							<li v-if="med.type != 'nordex'">
 								<select class="color"
 									v-model="med.color" v-on:change="reCalculate">
 									<option value="white">Blanco</option>
@@ -148,7 +148,7 @@
 				<div class="Extras">
 					<div class="title-section">
 						<h3>Extras</h3>
-						
+
 					</div>
 
 					<div class="content" v-for="med in furniture.data.Extras">

@@ -2081,7 +2081,1078 @@ var app= new Vue ({
 
 				}
 			},
+			{
+				code: 21,
+				name: "Librero Separador Ambiente Estante",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 137,
+					lastTotalWidth: 125,
+					lastTotalDepth: 22,
+
+					totalHeight: 137,
+					totalWidth: 125,
+					totalDepth: 22,
+
+					X:[
+						{
+							cost:0,
+							name:'nada',
+							height:0,
+							width:0,
+							cantidad:0,
+							color:'white',
+							area:0,
+						},
+						
+					],
 			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:137,
+							width:22,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Laterales Medios Largos',
+							height:103.4,
+							width:22,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Laterales Medios Peque'+String.fromCharCode(241)+'os',
+							height:15,
+							width:22,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontal',
+							height:22,
+							width:121.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Alrededor Horizontal',
+							height:22,
+							width:43.2,
+							cantidad:8,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Medios Horizontales',
+							height:22,
+							width:31.4,
+							cantidad:5,
+							color:'white',
+							area:0,
+						},
+						
+						
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 0.334, type: 'normal'},
+								{id: 2, prop: 0.334, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 0.334, type: 'normal'},
+								{id: 2, prop: 0.334, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 22,
+				name: "Mesa De Noche Velador",
+			},
+			{
+				code: 23,
+				name: "Biblioteca Moderna Librero 10 Espacios",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 170,
+					lastTotalWidth: 70,
+					lastTotalDepth: 26,
+
+					totalHeight: 170,
+					totalWidth: 70,
+					totalDepth: 26,
+
+					X:[
+						{
+							type:'nordex',
+							cost:0,
+							name:'Nordex',
+							height:170,
+							width:70,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:170,
+							width:26,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral Medio',
+							height:161.4,
+							width:26,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontal',
+							height:26,
+							width:66.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separadores Horizontales',
+							height:26,
+							width:32.3,
+							cantidad:8,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 24,
+				name: "Mueble Para Ba"+ String.fromCharCode(241)+"o Inodoro",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 180,
+					lastTotalWidth: 63,
+					lastTotalDepth: 22,
+
+					totalHeight: 180,
+					totalWidth: 63,
+					totalDepth: 22,
+
+					X:[
+						{
+							cost:0,
+							name:'Puertas',
+							height:45,
+							width:31.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Tablas peque'+ String.fromCharCode(241)+'as',
+							height:7,
+							width:59.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:180,
+							width:22,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Puertas',
+							height:22,
+							width:59.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separadores Horizontales',
+							height:22,
+							width:59.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:2,
+						},
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:4,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 25,
+				name: "SIN TERMINAR - Mueble Centro De Entretenimiento",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 62,
+					lastTotalWidth: 160,
+					lastTotalDepth: 42,
+
+					totalHeight: 62,
+					totalWidth: 160,
+					totalDepth: 42,
+
+					X:[
+						{
+							type:'nordex',
+							cost:0,
+							name:'Nordex',
+							height:53.2,
+							width:160,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Cajon - Puertas',
+							height:18.6,
+							width:54.6,
+							cantidad:2,
+							color:'black',
+							area:0,
+						},
+			
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:49.6,
+							width:42,
+							cantidad:4,
+							color:'black',
+							area:0,
+						},
+						{
+							name:'Cajon - Laterales',
+							height:15,
+							width:35,
+							cantidad:4,
+							color:'black',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior para Tv',
+							height:42,
+							width:110,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Superior para modem',
+							height:42,
+							width:55,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							type: 'nordex',
+							name:'Cajon - Nordex',
+							height:35,
+							width:52.4,
+							cantidad:2,
+							color:'nordex',
+							area:0,
+						},
+						{
+							name:'Superior e Inferior',
+							height:42,
+							width:160,
+							cantidad:2,
+							color:'black',
+							area:0,
+						},
+						
+
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:2,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 26,
+				name: "Mueble De Cocina Alacena",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 150,
+					lastTotalWidth: 40,
+					lastTotalDepth: 32,
+
+					totalHeight: 150,
+					totalWidth: 40,
+					totalDepth: 32,
+
+					X:[
+						{
+							cost:0,
+							name:'Puerta',
+							height:143,
+							width:40,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							type:'nordex',
+							cost:0,
+							name:'Nordex',
+							height:150,
+							width:40,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Soporte Vertical',
+							height:7,
+							width:36.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:150,
+							width:32,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior',
+							height:32,
+							width:36.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separadores Horizontales',
+							height:32,
+							width:36.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 27,
+				name: "Mueble Microondas Organizador Cocina",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 89,
+					lastTotalWidth: 62,
+					lastTotalDepth: 45,
+
+					totalHeight: 89,
+					totalWidth: 62,
+					totalDepth: 45,
+
+					X:[
+						{
+							cost:0,
+							name:'Puertas',
+							height:69,
+							width:30.8,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:89,
+							width:43,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontales',
+							height:43,
+							width:58.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Superior Puerta Horizontal',
+							height:43,
+							width:58.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Divisiones Horizontales',
+							height:43,
+							width:58.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Rueda',
+							costo:3.50,
+							cantidad:4,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:2,
+						},
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:4,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 0.5, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 28,
+				name: "FATAL ERROR - Mueble Para Tv",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					fixedHeight: 55,
+					fixedWidth: 120,
+					fixedDepth: 30,
+
+					lastTotalHeight: 55,
+					lastTotalWidth: 120,
+					lastTotalDepth: 30,
+
+					totalHeight: 55,
+					totalWidth: 120,
+					totalDepth: 30,
+
+					X:[
+						{
+							cost:0,
+							name:'Nordex',
+							height:55,
+							width:120,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:51.4,
+							width:30,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Horizontales',
+							height:30,
+							width:120,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separador Horizontal',
+							height:30,
+							width:37.6,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'aumento' , minWidth: 37.6},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 29,
+				name: "Escritorio Moderno Mueble Pc Oficina",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 75,
+					lastTotalWidth: 120,
+					lastTotalDepth: 55,
+
+					totalHeight: 75,
+					totalWidth: 120,
+					totalDepth: 55,
+
+					X:[
+						{
+							cost:0,
+							name:'Soporte Librero',
+							height:83,
+							width:20,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Soporte Escritorio',
+							height:73.2,
+							width:20,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Lateral Largo Librero',
+							height:83,
+							width:20,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral Peque'+String.fromCharCode(241)+'o Librero',
+							height:73.2,
+							width:20,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral Escritorio',
+							height:73.2,
+							width:55,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+			
+
+					Z:[
+						{
+							name:'Inferior Librero',
+							height:55,
+							width:20,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separador Librero',
+							height:55,
+							width:20,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Superficie Escritorio',
+							height:55,
+							width:120,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Rueda',
+							costo:3.50,
+							cantidad:4,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:2,
+						},
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:4,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z:[
+								
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+
 
 
 
@@ -2123,6 +3194,8 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.X[relation.id].height += dh * relation.prop
 				}
+				
+
 				if(relation.type == 'x0.36'){
 					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.36
 				}
@@ -2171,6 +3244,23 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.Z[relation.id].width += dh * relation.prop
 				}
+
+				if(relation.type == 'aumento'){
+
+					if (this.furniture.data.totalWidth  < this.furniture.data.fixedWidth ) {
+						this.furniture.data.Z[relation.id].width = minWidth
+					}
+					
+					this.furniture.data.Z[relation.id].width += dh * relation.prop
+
+					// if (this.furniture.data.Z[relation.id].width < relation.minWidth || dh < 0) {
+					// 	this.furniture.data.Z[relation.id].width = relation.minWidth
+					// }
+
+										
+				}
+
+				
 				if(relation.type == 'x1.8/cantidad'){
 					this.furniture.data.Z[relation.id].width = (this.furniture.data.totalWidth -(1.8 * (this.furniture.data.Z[relation.id].cantidad + 1)))/ this.furniture.data.Z[relation.id].cantidad
 				}
