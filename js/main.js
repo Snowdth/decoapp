@@ -58,7 +58,7 @@ var app= new Vue ({
 							height:78,
 							width:55,
 							cantidad:1,
-							color:'white',
+							color:'black',
 							area:0,
 						},
 						{
@@ -149,7 +149,7 @@ var app= new Vue ({
 						{
 							name:'Patines',
 							costo:0.04,
-							cantidad:1,
+							cantidad:2,
 						},
 						{
 							name:'Tornillos',
@@ -194,7 +194,6 @@ var app= new Vue ({
 					}
 
 				}
-
 			},
 			{
 				code: 2,
@@ -256,7 +255,7 @@ var app= new Vue ({
 							name:'Separador Vertical de Contenido',
 							height:20,
 							width:18,
-							cantidad:2,
+							cantidad:1,
 							color:'white',
 							area:0,
 						},
@@ -377,6 +376,167 @@ var app= new Vue ({
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 79,
+					lastTotalWidth: 136,
+					lastTotalDepth: 60,
+
+					totalHeight: 79,
+					totalWidth: 136,
+					totalDepth: 60,
+
+					X:[
+						{
+							cost:0,
+							name:'Sujetador de Puerta',
+							height:77,
+							width:33,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+					Y:[
+						{
+							name:'Laterales de Mesa',
+							height:77,
+							width:60,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+					Z:[
+						{
+							name:'Negro - Mesa',
+							height:60,
+							width:50,
+							cantidad:2,
+							color:'black',
+							area:0,
+						},
+
+						{
+							name:'Centro de Mesa',
+							height:60,
+							width:34,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Separador Horizontal de Contenido',
+							height:60,
+							width:25,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Parte Inferior de Mesa',
+							height:60,
+							width:25,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Pequeña melamina',
+							height:7,
+							width:25,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+					Extras:[
+						{
+							name:'Bisagra Grandes',
+							costo:0.48,
+							cantidad:5,
+						},
+
+						{
+							name:'Patines',
+							costo:0.04,
+							cantidad:4,
+						},
+						{
+							name:'Sujetadores',
+							costo:0.15,
+							cantidad:2,
+						},
+						{
+							name:'Alcallatas',
+							costo:0.06,
+							cantidad:2,
+						},
+						{
+							name:'Tarugos de Madera',
+							costo:0.08,
+							cantidad:2,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:52,
+						},
+						{
+							name:'Varillas',
+							costo:2.50,
+							label: "Metro",
+							cantidad:1.5,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+
+
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 0.5, type: 'normal'},
+
+							],
+							z: [
+								{id: 0, prop: 0.5, type: 'normal'},
+								{id: 1, prop: 0.5, type: 'normal'},
+								{id: 2, prop: 0.5, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
 			},
 			{
 				code: 4,
@@ -516,11 +676,10 @@ var app= new Vue ({
 					}
 
 				}
-
 			},
 			{
 				code: 5,
-				name: "Repisa de Biocuero",
+				name: "NO DISPONIBLE - Repisa BioCuero",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -543,7 +702,6 @@ var app= new Vue ({
 
 					X:[
 						{
-							id: 1,
 							cost:0,
 							name:'Soporte',
 							height:6,
@@ -554,7 +712,6 @@ var app= new Vue ({
 						},
 						{
 							type: 'nordex',
-							id: 2,
 							cost:0,
 							name:'Nordex',
 							height:180,
@@ -596,7 +753,7 @@ var app= new Vue ({
 							name:'Separador Horizontal',
 							height:30,
 							width:26.4,
-							cantidad:4,
+							cantidad:5,
 							color:'white',
 							area:0,
 						},
@@ -607,7 +764,6 @@ var app= new Vue ({
 
 					Extras:[
 						{
-							id: 1,
 							name:'Patines',
 							costo:0.04,
 							cantidad:4,
@@ -816,12 +972,11 @@ var app= new Vue ({
 
 					X:[
 						{
-							id: 1,
 							cost:0,
 							name:'nothing',
 							height:0,
 							width:0,
-							cantidad:1,
+							cantidad:0,
 							color:'white',
 							area:0,
 						},
@@ -1240,7 +1395,6 @@ var app= new Vue ({
 
 					X:[
 						{
-							id: 1,
 							cost:0,
 							name:'Puertas Bajas',
 							height:52,
@@ -1250,7 +1404,6 @@ var app= new Vue ({
 							area:0,
 						},
 						{
-							id: 2,
 							cost:0,
 							name:'Nordex',
 							height:180,
@@ -1260,7 +1413,6 @@ var app= new Vue ({
 							area:0,
 						},
 						{
-							id: 3,
 							cost:0,
 							name:'Soporte Vertical',
 							height:7,
@@ -1365,7 +1517,160 @@ var app= new Vue ({
 			},
 			{
 				code: 12,
-				name: "Velador Flotante",			
+
+				name: "Velador Flotante",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 16,
+					lastTotalWidth: 40,
+					lastTotalDepth: 35,
+
+					totalHeight: 16,
+					totalWidth: 40,
+					totalDepth: 35,
+
+
+					X:[
+						{
+							cost:0,
+							name:'Cajon Puerta',
+							height:16,
+							width:40,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Cajon Parte trasera',
+							height:12.4,
+							width:36.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Tapa delantera y trasera',
+							height:9,
+							width:30.2,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+					Y:[
+						{
+							name:'Cajon Laterales',
+							height:12.4,
+							width:35,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Tapas laterales',
+							height:9,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+					Z:[
+						{
+							name:'Superior e Inferior',
+							height:35,
+							width:40,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+						{
+							type: 'nordex',
+							name:'Superficie interior - Nordex',
+							height:30,
+							width:33.8,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Correderas de 30cm',
+							costo:2.45,
+							cantidad:2,
+						},
+						{
+							name:'Tornillos Fijadores',
+							costo:0.18,
+							cantidad:3,
+						},
+						{
+							name:'Tarugos Naranja',
+							costo:0.08,
+							cantidad:3,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},						
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
 			},
 			{
 				code: 13,
@@ -1452,7 +1757,7 @@ var app= new Vue ({
 
 					Extras:[
 						{
-							name:'Par de Bisagras Cangrejo',
+							name:'Bisagras Cangrejo',
 							costo:1.15,
 							cantidad:8,
 						},
@@ -1576,10 +1881,18 @@ var app= new Vue ({
 			
 					Z:[
 						{
+							name:'Melamina Superior',
+							height:17,
+							width:60,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
 							name:'Melaminas Z',
 							height:17,
 							width:60,
-							cantidad:4,
+							cantidad:3,
 							color:'white',
 							area:0,
 						},
@@ -1613,6 +1926,7 @@ var app= new Vue ({
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
 							]
 						},
 						depth: {
@@ -1621,6 +1935,7 @@ var app= new Vue ({
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
 							]
 						}
 					}
@@ -1651,7 +1966,7 @@ var app= new Vue ({
 							name:'Fondo',
 							height:38.4,
 							width:60.4,
-							cantidad:3,
+							cantidad:1,
 							color:'nordex',
 							area:0,
 						},
@@ -1660,7 +1975,7 @@ var app= new Vue ({
 							name:'Sujetadores',
 							height:8,
 							width:60.4,
-							cantidad:3,
+							cantidad:2,
 							color:'white',
 							area:0,
 						},
@@ -1684,7 +1999,7 @@ var app= new Vue ({
 							name:'Superior Horizontal',
 							height:30,
 							width:60.4,
-							cantidad:4,
+							cantidad:1,
 							color:'white',
 							area:0,
 						},
@@ -1692,7 +2007,7 @@ var app= new Vue ({
 							name:'Inferior Horizontal',
 							height:41,
 							width:60.4,
-							cantidad:4,
+							cantidad:1,
 							color:'white',
 							area:0,
 						},
@@ -1768,7 +2083,7 @@ var app= new Vue ({
 							name:'Nordex',
 							height:145,
 							width:30,
-							cantidad:3,
+							cantidad:1,
 							color:'nordex',
 							area:0,
 						},
@@ -1854,10 +2169,201 @@ var app= new Vue ({
 				}
 			},
 			{
+				// NUMERO 18
 				code: 17,
 				name: "Comoda 4 Cajones Cerezo",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 80,
+					lastTotalWidth: 80,
+					lastTotalDepth: 40,
+
+					totalHeight: 80,
+					totalWidth: 80,
+					totalDepth: 40,
+
+					X:[
+						{
+							type: 'nordex',
+							cost:0,
+							name:'Mueble - NORDEX',
+							height:80,
+							width:80,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Mueble - Soporte Inferior ',
+							height:10,
+							width:76.4,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Mueble - Soporte Inferior peque'+String.fromCharCode(241)+'o',
+							height:8,
+							width:76.4,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Cajon - Puertas',
+							height:14.9,
+							width:80,
+							cantidad:4,
+							color:'other',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Cajon - Tapas delanteras + traseras',
+							height:12,
+							width:70.2,
+							cantidad:8,
+							color:'other',
+							area:0,
+						},
+
+					],
+			
+
+					Y:[
+						{
+							name:'Mueble - Laterales',
+							height:78.2,
+							width:40,
+							cantidad:2,
+							color:'other',
+							area:0,
+						},
+						{
+							name:'Cajon - Tapas Laterales',
+							height:12,
+							width:35,
+							cantidad:8,
+							color:'other',
+							area:0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Mueble - Superior',
+							height:40,
+							width:80,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						{
+							name:'Mueble - Soporte',
+							height:8,
+							width:76.4,
+							cantidad:2,
+							color:'other',
+							area:0,
+						},
+						{
+							name:'Cajon - Superficie NORDEX',
+							height:34,
+							width:72.8,
+							cantidad:4,
+							color:'other',
+							area:0,
+						},
+						{
+							name:'Cajon - Soportes',
+							height:8,
+							width:31.4,
+							cantidad:4,
+							color:'other',
+							area:0,
+						},
+						
+
+					],
+
+
+
+					Extras:[
+						
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:4,
+						},
+						{
+							name:'Correderas',
+							costo:2.45,
+							cantidad:8,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
 			},
 			{
+				// NUMERO 19
 				code: 18,
 				name: "Velador Mesa de Noche",
 
@@ -1890,9 +2396,17 @@ var app= new Vue ({
 
 					Y:[
 						{
-							name:'Laterales',
+							name:'Lateral Largo',
 							height:66.4,
 							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Lateral Medio',
+							height:66.4,
+							width:22,
 							cantidad:2,
 							color:'white',
 							area:0,
@@ -1945,6 +2459,7 @@ var app= new Vue ({
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
 							]
 						},
 						width: {
@@ -1959,6 +2474,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1970,10 +2486,161 @@ var app= new Vue ({
 				}
 			},
 			{
+				// NUMERO 20
 				code: 19,
-				name: "Escritorio Flotante Repisa Biblioteca Organizador",
+				name: "PENDIENTE - Escritorio Flotante Repisa Biblioteca Organizador",
+
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 155,
+					lastTotalWidth: 150,
+					lastTotalDepth: 50,
+
+					totalHeight: 155,
+					totalWidth: 150,
+					totalDepth: 50,
+
+					X:[
+						{
+							cost:0,
+							name:'Repisa - Fondo de un cuadro',
+							height:21.4,
+							width:21.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+			
+
+					Y:[
+						{
+							name:'Escritorio - Lateral',
+							height:78.2,
+							width:50,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Repisa - Laterales largos',
+							height:98.2,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Repisa - Lateral pequeño',
+							height:10,
+							width:23.2,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+			
+
+					Z:[
+						{
+							name:'Escritorio - Superficie',
+							height:50,
+							width:130,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Repisa - Superior',
+							height:25,
+							width:21.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Repisa - Divisiones',
+							height:25,
+							width:21.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Repisa - Inferior',
+							height:25,
+							width:50,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Angulos de Fierro',
+							costo:1.50,
+							cantidad:2,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
 			},
 			{
+				// NUMERO 21
 				code: 20,
 				name: "Estante Cubo Flotante",
 
@@ -2030,7 +2697,7 @@ var app= new Vue ({
 							name:'Inferior Horizontal',
 							height:25,
 							width:120,
-							cantidad:2,
+							cantidad:1,
 							color:'white',
 							area:0,
 						},
@@ -2082,6 +2749,7 @@ var app= new Vue ({
 				}
 			},
 			{
+				// NUMERO 22
 				code: 21,
 				name: "Librero Separador Ambiente Estante",
 
@@ -2177,7 +2845,7 @@ var app= new Vue ({
 						{
 							name:'Tornillos',
 							costo:0.047,
-							cantidad:32,
+							cantidad:70,
 						},
 
 					],
@@ -2219,9 +2887,10 @@ var app= new Vue ({
 
 				}
 			},
-			{
+			{	
+				// NUMERO 23
 				code: 22,
-				name: "Mesa De Noche Velador",
+				name: "PENDIENTE - Mesa De Noche Velador",
 			},
 			{
 				code: 23,
@@ -2472,7 +3141,7 @@ var app= new Vue ({
 			},
 			{
 				code: 25,
-				name: "SIN TERMINAR - Mueble Centro De Entretenimiento",
+				name: "Mueble Centro De Entretenimiento",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2500,20 +3169,39 @@ var app= new Vue ({
 						},
 						{
 							cost:0,
-							name:'Cajon - Puertas',
+							name:'Negro - Cajon - Puertas',
 							height:18.6,
 							width:54.6,
 							cantidad:2,
 							color:'black',
 							area:0,
 						},
+						{
+							cost:0,
+							name:'Negro - Cajon - Parte delantera y trasera ',
+							height:15,
+							width:54.6,
+							cantidad:4,
+							color:'black',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Blanco - Inferior ',
+							height:7,
+							width:110,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
 			
 					],
 			
 
 					Y:[
 						{
-							name:'Laterales',
+							name:'Negro -Laterales',
 							height:49.6,
 							width:42,
 							cantidad:4,
@@ -2521,11 +3209,19 @@ var app= new Vue ({
 							area:0,
 						},
 						{
-							name:'Cajon - Laterales',
+							name:'Negro - Cajon - Laterales',
 							height:15,
 							width:35,
 							cantidad:4,
 							color:'black',
+							area:0,
+						},
+						{
+							name:'Blanco - Laterales',
+							height:7,
+							width:38.4,
+							cantidad:2,
+							color:'white',
 							area:0,
 						},
 					],
@@ -2534,7 +3230,7 @@ var app= new Vue ({
 
 					Z:[
 						{
-							name:'Superior para Tv',
+							name:'Blanco - Superior para Tv',
 							height:42,
 							width:110,
 							cantidad:1,
@@ -2542,7 +3238,7 @@ var app= new Vue ({
 							area:0,
 						},
 						{
-							name:'Superior para modem',
+							name:'Blanco - Superior para modem',
 							height:42,
 							width:55,
 							cantidad:1,
@@ -2551,7 +3247,7 @@ var app= new Vue ({
 						},
 						{
 							type: 'nordex',
-							name:'Cajon - Nordex',
+							name:'Nordex - Cajon ',
 							height:35,
 							width:52.4,
 							cantidad:2,
@@ -2559,7 +3255,7 @@ var app= new Vue ({
 							area:0,
 						},
 						{
-							name:'Superior e Inferior',
+							name:'Negro - Superior e Inferior',
 							height:42,
 							width:160,
 							cantidad:2,
@@ -3096,21 +3792,6 @@ var app= new Vue ({
 							costo:0.047,
 							cantidad:32,
 						},
-						{
-							name:'Rueda',
-							costo:3.50,
-							cantidad:4,
-						},
-						{
-							name:'Tiradores-Manijas',
-							costo:3,
-							cantidad:2,
-						},
-						{
-							name:'Bisagras Cangrejo',
-							costo:1.15,
-							cantidad:4,
-						},
 
 					],
 
@@ -3152,8 +3833,1126 @@ var app= new Vue ({
 
 				}
 			},
+			{
+				code: 30,
+				name: "Despensero Estante Con 2 Puertas",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 180,
+					lastTotalWidth: 70,
+					lastTotalDepth: 30,
+
+					totalHeight: 180,
+					totalWidth: 70,
+					totalDepth: 30,
+
+					X:[
+						{
+							type:'nordex',
+							cost:0,
+							name:'Nordex',
+							height:180,
+							width:70,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Puertas',
+							height:65,
+							width:34.8,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Soporte Vertical',
+							height:7,
+							width:66.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'nada',
+							height:0,
+							width:0,
+							cantidad:0,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Estante',
+							height:30,
+							width:66.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Superior Puerta',
+							height:30,
+							width:66.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Divisiones Arriba',
+							height:30,
+							width:66.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Divisiones Abajo',
+							height:30,
+							width:66.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+					],
 
 
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:2,
+						},
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:4,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 0.37, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: .5, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 31,
+				name: "Estante Librero Con 4 Estantes",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 150,
+					lastTotalWidth: 50,
+					lastTotalDepth: 25,
+
+					totalHeight: 150,
+					totalWidth: 50,
+					totalDepth: 25,
+
+					X:[
+						{
+							type:'nordex',
+							cost:0,
+							name:'Nordex',
+							height:150,
+							width:50,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:150,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior Estante',
+							height:25,
+							width:46.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Divisores Estante',
+							height:25,
+							width:46.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},	
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 32,
+				name: "Mueble De Cocina",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 180,
+					lastTotalWidth: 70,
+					lastTotalDepth: 30,
+
+					totalHeight: 180,
+					totalWidth: 70,
+					totalDepth: 30,
+
+					X:[
+						{
+							type:'nordex',
+							cost:0,
+							name:'Nordex',
+							height:180,
+							width:70,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Puertas Grandes',
+							height:45,
+							width:34.8,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Cajon - Puerta ',
+							height:20,
+							width:70,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Peque'+String.fromCharCode(241)+'as Melaminas',
+							height:7,
+							width:66.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Cajon - Parte delantera y trasera',
+							height:15,
+							width:60.2,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:180,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Cajon - soporte',
+							height:15,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+			
+
+					Z:[
+						{
+							type: 'nordex',
+							name:'Cajon - Nordex',
+							height:25,
+							width:63.8,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+						},
+						{
+							name:'Superior e Inferior de Puertas',
+							height:30,
+							width:66.4,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Divisiones Horizontales',
+							height:30,
+							width:66.4,
+							cantidad:4,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Bisagras Cangrejo',
+							costo:1.15,
+							cantidad:8,
+						},
+						{
+							name:'Tiradores-Manijas',
+							costo:3,
+							cantidad:4,
+						},
+						{
+							name:'Patines',
+							costo:0.04,
+							cantidad:4,
+						},
+						{
+							name:'Correderas',
+							costo:2.45,
+							cantidad:2,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 33,
+				name: "Escritorio con Armario",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 125,
+					lastTotalWidth: 140,
+					lastTotalDepth: 40,
+
+					totalHeight: 125,
+					totalWidth: 140,
+					totalDepth: 40,
+
+					X:[
+						{
+							cost:0,
+							name:'Escritorio - Parte Frontal',
+							height:20,
+							width:98.2,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+						{
+							cost:0,
+							name:'Armario-COLOR - Parte trasera',
+							height:138.2,
+							width:50,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Armario-COLOR - Puerta',
+							height:127,
+							width:30,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Armario- peque'+String.fromCharCode(241)+'o soporte',
+							height:7,
+							width:50,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+
+					],
+			
+
+					Y:[
+						{
+							name: 'Armario- COLOR -Laterales',
+							height:127.6,
+							width:38.2,
+							cantidad:2,
+							color:'other',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Escritorio - COLOR - Lateral',
+							height:80,
+							width:40,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						{
+							name: 'Armario- peque'+String.fromCharCode(241)+'os soportes',
+							height:7,
+							width:38.2,
+							cantidad:2,
+							color:'other',
+							area:0,
+						},
+						
+						
+
+					],
+
+			
+
+					Z:[
+						{
+							cost:0,
+							name:'Escritorio - Mesa',
+							height:40,
+							width:100,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Armario - Superior e Inferior',
+							height:40,
+							width:50,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Armario - Separadores interiores',
+							height:30,
+							width:20,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Armario - Separadores exteriores',
+							height:36,
+							width:26.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+
+						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+	
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 34,
+				name: "Estante Repisa ",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 180,
+					lastTotalWidth: 65,
+					lastTotalDepth: 22,
+
+					totalHeight: 180,
+					totalWidth: 65,
+					totalDepth: 22,
+
+					X:[
+						{
+							
+							cost:0,
+							name:'Sujetador de Estante',
+							height:180,
+							width:40,
+							cantidad:1,
+							color:'other',
+							area:0,
+						},
+						
+
+
+					],
+			
+
+					Y:[
+						{
+							name:'Vertical de L',
+							height:27.9,
+							width:22,
+							cantidad:6,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+			
+
+					Z:[
+						{
+							name:'Horizontal arriba',
+							height:22,
+							width:65,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Horizontal de L',
+							height:22,
+							width:65,
+							cantidad:6,
+							color:'white',
+							area:0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+		
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+		
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 35,
+				name: "Centro De Entretenimiento",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 0,
+					lastTotalWidth: 0,
+					lastTotalDepth: 0,
+
+					totalHeight: 0,
+					totalWidth: 0,
+					totalDepth: 0,
+
+					X:[
+						{
+							cost:0,
+							name:'Mueble - forma L Vertical',
+							height:15,
+							width:106.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+						{
+							cost:0,
+							name:'Escritorio - Vertical',
+							height:10,
+							width:90,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Estante - forma L Vertical',
+							height:32,
+							width:110,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+
+					],
+			
+
+					Y:[
+						{
+							name:'Mueble - Laterales',
+							height:56.4,
+							width:40,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Escritorio - Lateral',
+							height:78.2,
+							width:40,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+
+					],
+
+			
+
+					Z:[
+						{
+							name:'Mueble - Superior e Inferior',
+							height:40,
+							width:110,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							name:'Mueble - forma L Horizontal',
+							height:15,
+							width:106.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Escritorio - superficie',
+							height:40,
+							width:120,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Escritorio - Melaminas Z',
+							height:10,
+							width:90,
+							cantidad:2,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Estante - forma L Horizontal',
+							height:14,
+							width:110,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Patas 6cm',
+							costo:3.20,
+							cantidad:4,
+						},
+						{
+							name:'Patas 12cm',
+							costo:4.80,
+							cantidad:1,
+						},
+						{
+							name:'Perno Grande + Tuercas + Huachas',
+							costo:3,
+							cantidad:1,
+						},
+						
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+		
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				code: 36,
+				name: "Mesa De Centro",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 50,
+					lastTotalWidth: 90,
+					lastTotalDepth: 50,
+
+					totalHeight: 50,
+					totalWidth: 90,
+					totalDepth: 50,
+
+					X:[
+						{
+							cost:0,
+							name:'Blanco- X',
+							height:39.4,
+							width:40,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						{
+							cost:0,
+							name:'Negro - X',
+							height:19.4,
+							width:86.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+
+					],
+			
+
+					Y:[
+						{
+							name:'Negro- Lateral Alto',
+							height:39.4,
+							width:40,
+							cantidad:1,
+							color:'black',
+							area:0,
+						},
+						{
+							name:'Negro- Lateral Pequeño',
+							height:19.4,
+							width:40,
+							cantidad:1,
+							color:'black',
+							area:0,
+						},
+						
+
+					],
+
+			
+
+					Z:[
+						{
+							name:'Negro - Superficie Inferior',
+							height:50,
+							width:90,
+							cantidad:1,
+							color:'black',
+							area:0,
+						},
+						{
+							name:'Negro - Superficie Superior',
+							height:40,
+							width:50,
+							cantidad:1,
+							color:'black',
+							area:0,
+						},
+						{
+							name:'Blanco - Superficie ',
+							height:50,
+							width:48.2,
+							cantidad:1,
+							color:'white',
+							area:0,
+						},
+						
+
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+						{
+							name:'Ruedas',
+							costo:3.50,
+							cantidad:4,
+						},
+
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+		
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								
+							]
+						}
+					}
+
+				}
+			},
 
 
 
