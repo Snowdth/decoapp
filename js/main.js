@@ -396,7 +396,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
@@ -409,7 +409,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 					Z:[
@@ -1499,12 +1499,12 @@ var app= new Vue ({
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						depth: {
 							y: [
-								{id: 0, prop: 1, type: 'normal'},						
+								{id: 0, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1655,13 +1655,13 @@ var app= new Vue ({
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},						
+								{id: 1, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -1719,7 +1719,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 
 					Y:[
 						{
@@ -1740,7 +1740,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 					Z:[
 						{
 							name:'Superior e Inferior',
@@ -1863,9 +1863,9 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -1878,7 +1878,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 					Z:[
 						{
 							name:'Melamina Superior',
@@ -1896,14 +1896,14 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
 
 
 					Extras:[
-						
+
 						{
 							name:'Tornillos',
 							costo:0.047,
@@ -1980,7 +1980,7 @@ var app= new Vue ({
 							area:0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -1993,7 +1993,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 					Z:[
 						{
 							name:'Superior Horizontal',
@@ -2011,14 +2011,14 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
 
 
 					Extras:[
-						
+
 						{
 							name:'Tornillos',
 							costo:0.047,
@@ -2087,9 +2087,9 @@ var app= new Vue ({
 							color:'nordex',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -2102,7 +2102,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2121,14 +2121,14 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
 
 
 					Extras:[
-						
+
 						{
 							name:'Tornillos',
 							costo:0.047,
@@ -2235,7 +2235,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 
 					Y:[
 						{
@@ -2256,7 +2256,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2291,14 +2291,14 @@ var app= new Vue ({
 							color:'other',
 							area:0,
 						},
-						
+
 
 					],
 
 
 
 					Extras:[
-						
+
 						{
 							name:'Tornillos',
 							costo:0.047,
@@ -2390,9 +2390,9 @@ var app= new Vue ({
 							color:'nordex',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -2413,7 +2413,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2432,7 +2432,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
@@ -2514,9 +2514,9 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -2543,10 +2543,10 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2581,7 +2581,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 
@@ -2667,9 +2667,9 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -2690,7 +2690,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2701,8 +2701,8 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
-						
+
+
 
 					],
 
@@ -2776,9 +2776,9 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -2807,7 +2807,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2834,8 +2834,8 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
-						
+
+
 
 					],
 
@@ -2887,7 +2887,7 @@ var app= new Vue ({
 
 				}
 			},
-			{	
+			{
 				// NUMERO 23
 				code: 22,
 				name: "PENDIENTE - Mesa De Noche Velador",
@@ -2920,9 +2920,9 @@ var app= new Vue ({
 							color:'nordex',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -2943,7 +2943,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -2962,7 +2962,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 
@@ -3046,10 +3046,10 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
-						
+
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3062,7 +3062,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3081,7 +3081,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 
@@ -3195,9 +3195,9 @@ var app= new Vue ({
 							area:0,
 						},
 
-			
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3226,7 +3226,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3262,9 +3262,9 @@ var app= new Vue ({
 							color:'black',
 							area:0,
 						},
-						
 
-						
+
+
 					],
 
 
@@ -3363,10 +3363,10 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
-						
+
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3379,7 +3379,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3398,7 +3398,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 
@@ -3474,9 +3474,9 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3489,7 +3489,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3516,7 +3516,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 
@@ -3609,9 +3609,9 @@ var app= new Vue ({
 							color:'nordex',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3624,7 +3624,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3722,9 +3722,9 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3754,7 +3754,7 @@ var app= new Vue ({
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3781,7 +3781,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 					],
 
 
@@ -3813,7 +3813,7 @@ var app= new Vue ({
 								{id: 1, prop: 1, type: 'normal'},
 							],
 							z:[
-								
+
 								{id: 2, prop: 1, type: 'normal'},
 							]
 						},
@@ -3880,7 +3880,7 @@ var app= new Vue ({
 							area:0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -3894,7 +3894,7 @@ var app= new Vue ({
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -3960,7 +3960,7 @@ var app= new Vue ({
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						width: {
@@ -3979,7 +3979,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4021,7 +4021,7 @@ var app= new Vue ({
 							area:0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -4035,7 +4035,7 @@ var app= new Vue ({
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4074,7 +4074,7 @@ var app= new Vue ({
 								{id: 0, prop: 1, type: 'normal'},
 							],
 							y: [
-								{id: 0, prop: 1, type: 'normal'},	
+								{id: 0, prop: 1, type: 'normal'},
 							]
 						},
 						width: {
@@ -4089,7 +4089,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4167,7 +4167,7 @@ var app= new Vue ({
 
 
 					],
-			
+
 
 					Y:[
 						{
@@ -4186,11 +4186,11 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4264,7 +4264,7 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						width: {
@@ -4285,8 +4285,8 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
-								
+
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4325,7 +4325,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 						{
 							cost:0,
 							name:'Armario-COLOR - Parte trasera',
@@ -4356,7 +4356,7 @@ var app= new Vue ({
 
 
 					],
-			
+
 
 					Y:[
 						{
@@ -4384,12 +4384,12 @@ var app= new Vue ({
 							color:'other',
 							area:0,
 						},
-						
-						
+
+
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4429,7 +4429,7 @@ var app= new Vue ({
 							area:0,
 						},
 
-						
+
 					],
 
 
@@ -4440,7 +4440,7 @@ var app= new Vue ({
 							costo:0.047,
 							cantidad:32,
 						},
-	
+
 
 					],
 
@@ -4456,7 +4456,7 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						width: {
@@ -4477,8 +4477,8 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
-								
+
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4509,7 +4509,7 @@ var app= new Vue ({
 
 					X:[
 						{
-							
+
 							cost:0,
 							name:'Sujetador de Estante',
 							height:180,
@@ -4518,11 +4518,11 @@ var app= new Vue ({
 							color:'other',
 							area:0,
 						},
-						
+
 
 
 					],
-			
+
 
 					Y:[
 						{
@@ -4533,11 +4533,11 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4574,17 +4574,17 @@ var app= new Vue ({
 						height: {
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
-		
+
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						width: {
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
-		
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -4594,8 +4594,8 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
-								
+
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4633,7 +4633,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 						{
 							cost:0,
 							name:'Escritorio - Vertical',
@@ -4655,7 +4655,7 @@ var app= new Vue ({
 
 
 					],
-			
+
 
 					Y:[
 						{
@@ -4674,11 +4674,11 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4751,7 +4751,7 @@ var app= new Vue ({
 							costo:3,
 							cantidad:1,
 						},
-						
+
 					],
 
 					relations: {
@@ -4760,7 +4760,7 @@ var app= new Vue ({
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
-		
+
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4785,7 +4785,7 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4837,7 +4837,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 
 					Y:[
 						{
@@ -4856,11 +4856,11 @@ var app= new Vue ({
 							color:'black',
 							area:0,
 						},
-						
+
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4887,7 +4887,7 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 						},
-						
+
 
 
 					],
@@ -4913,8 +4913,8 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
-		
+
+
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -4925,28 +4925,28 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
 								{id: 3, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
 								{id: 3, prop: 1, type: 'normal'},
-								
+
 							]
 						}
 					}
@@ -4993,7 +4993,7 @@ var app= new Vue ({
 				if(relation.type == 'normal'){
 					this.furniture.data.X[relation.id].height += dh * relation.prop
 				}
-				
+
 
 				if(relation.type == 'x0.36'){
 					this.furniture.data.X[relation.id].height = this.furniture.data.totalHeight * 0.36
@@ -5047,19 +5047,19 @@ var app= new Vue ({
 				if(relation.type == 'aumento'){
 
 					if (this.furniture.data.totalWidth  < this.furniture.data.fixedWidth ) {
-						this.furniture.data.Z[relation.id].width = minWidth
+						this.furniture.data.Z[relation.id].width = relation.minWidth
 					}
-					
+
 					this.furniture.data.Z[relation.id].width += dh * relation.prop
 
 					// if (this.furniture.data.Z[relation.id].width < relation.minWidth || dh < 0) {
 					// 	this.furniture.data.Z[relation.id].width = relation.minWidth
 					// }
 
-										
+
 				}
 
-				
+
 				if(relation.type == 'x1.8/cantidad'){
 					this.furniture.data.Z[relation.id].width = (this.furniture.data.totalWidth -(1.8 * (this.furniture.data.Z[relation.id].cantidad + 1)))/ this.furniture.data.Z[relation.id].cantidad
 				}
