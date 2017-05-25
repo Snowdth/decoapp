@@ -37,7 +37,7 @@ var app= new Vue ({
 		furnitures: [
 			{
 				code: 1,
-				image: "https://http2.mlstatic.com/muebles-escritorio-velador-mesa-de-noche-flotante-D_NQ_NP_741905-MPE25092860113_102016-F.webp",
+				image: "./img/mesa-flotante-plegable.jpg",
 				name: "Mesa Flotante Plegable",
 
 				// Costo de Materiales
@@ -216,7 +216,7 @@ var app= new Vue ({
 			{
 				code: 2,
 				name: "Mueble Despensero Multiusos",
-				image: "https://http2.mlstatic.com/mueble-despensero-multiusos-de-melamina-de-18mm-D_NQ_NP_308225-MPE25391439389_022017-F.webp",
+				image: "./img/mueble-despensero-multiusos.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -392,7 +392,7 @@ var app= new Vue ({
 			{
 				code: 3,
 				name: "Mesa Plegable",
-				image: "https://http2.mlstatic.com/mesa-plegableabatible-para-estudio-envio-gratis-D_NQ_NP_883111-MPE20483672770_112015-F.webp",
+				image: "./img/mesa-plegable.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -561,7 +561,7 @@ var app= new Vue ({
 			{
 				code: 4,
 				name: "Mueble para Laptop",
-				image: "https://http2.mlstatic.com/mueble-flotante-para-laptop-de-melamina-de-18mm-D_NQ_NP_639125-MPE25391437517_022017-O.webp",
+				image: "./img/mueble-para-laptop.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -708,7 +708,7 @@ var app= new Vue ({
 			{
 				code: 6,
 				name: "Estante Despensero",
-				image: "https://http2.mlstatic.com/estante-despensero-de-melamina-de-18mm-D_NQ_NP_817225-MPE25403036087_022017-F.webp",
+				image: "./img/estante-despensero.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -833,7 +833,7 @@ var app= new Vue ({
 			{
 				code: 7,
 				name: "Centro de Entretenimiento en L",
-				image: "https://http2.mlstatic.com/centro-de-entretenimiento-en-l-de-melamina-de-18mm-D_NQ_NP_396225-MPE25403153538_022017-F.webp",
+				image: "./img/centro-de-entretenimiento-en-l.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -979,7 +979,7 @@ var app= new Vue ({
 			{
 				code: 8,
 				name: "Estante Cubo Doble",
-				image: "https://http2.mlstatic.com/estante-cubo-doble-de-melamina-de-18mm-D_NQ_NP_357225-MPE25403207293_022017-F.webp",
+				image: "./img/estante-cubo-doble.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -1089,6 +1089,7 @@ var app= new Vue ({
 			{
 				code: 9,
 				name: "Despensero De Cocina Puertas Bajas",
+				image: "./img/despensero-de-cocina-puertas-bajas.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -1245,6 +1246,7 @@ var app= new Vue ({
 			{
 				code: 10,
 				name: "Alacena Cocina de 4 Puertas",
+				image: "./img/alacena-cocina-de-4-puertas.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -1402,6 +1404,7 @@ var app= new Vue ({
 				code: 11,
 
 				name: "Biblioteca Estante 2 Puertas",
+				image: "./img/biblioteca-estante-2-puertas.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -1543,7 +1546,7 @@ var app= new Vue ({
 				code: 12,
 
 				name: "Velador Flotante",
-
+				image: "./img/velador-flotante.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -1699,6 +1702,7 @@ var app= new Vue ({
 			{
 				code: 13,
 				name: "Centro De Entretenimiento Led",
+				image: "./img/centro-de-entretenimiento-led.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -1863,6 +1867,7 @@ var app= new Vue ({
 			{
 				code: 14,
 				name: "Estante Repisa Flotante Decoracion Sala",
+				image: "./img/estante-repisa-flotante-decoracion-sala.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -1969,6 +1974,7 @@ var app= new Vue ({
 			{
 				code: 15,
 				name: "Mueble Flotante Para Microondas",
+				image: "./img/mueble-flotante-para-microondas.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2086,6 +2092,7 @@ var app= new Vue ({
 			{
 				code: 16,
 				name: "Biblioteca Librero 4 Estantes",
+				image: "./img/biblioteca-librero-4-estantes.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2196,6 +2203,7 @@ var app= new Vue ({
 				// NUMERO 18
 				code: 17,
 				name: "Comoda 4 Cajones Cerezo",
+				image: "./img/comoda-4-cajones-cerezo.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2390,6 +2398,7 @@ var app= new Vue ({
 				// NUMERO 19
 				code: 18,
 				name: "Velador Mesa de Noche",
+				image: "./img/velador-mesa-de-noche.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2513,7 +2522,7 @@ var app= new Vue ({
 				// NUMERO 20
 				code: 19,
 				name: "PENDIENTE - Escritorio Flotante Repisa Biblioteca Organizador",
-
+				image: "./img/escritorio-flotante-repisa-biblioteca-organizador.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2667,6 +2676,7 @@ var app= new Vue ({
 				// NUMERO 21
 				code: 20,
 				name: "Estante Cubo Flotante",
+				image: "./img/estante-cubo-flotante.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2776,6 +2786,7 @@ var app= new Vue ({
 				// NUMERO 22
 				code: 21,
 				name: "Librero Separador Ambiente Estante",
+				image: "./img/librero-separador-ambiente-estante.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -2916,6 +2927,7 @@ var app= new Vue ({
 				// NUMERO 23
 				code: 22,
 				name: "PENDIENTE - Mesa De Noche Velador",
+				image: "./img/mesa-de-noche-velador.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -3093,7 +3105,7 @@ var app= new Vue ({
 				//NUMERO 24
 				code: 23,
 				name: "Biblioteca Moderna Librero 10 Espacios",
-
+				image: "./img/biblioteca-moderna-librero-10-espacios.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -3212,7 +3224,7 @@ var app= new Vue ({
 				//NUMERO 25
 				code: 24,
 				name: "Mueble Para Ba"+ String.fromCharCode(241)+"o Inodoro",
-
+				image: "./img/mueble-para-bano-inodoro.jpg",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -3342,6 +3354,7 @@ var app= new Vue ({
 				//NUMERO 26
 				code: 25,
 				name: "Mueble Centro De Entretenimiento",
+				image: "./img/mueble-centro-de-entretenimiento.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -3538,6 +3551,7 @@ var app= new Vue ({
 				//NUMERO 27
 				code: 26,
 				name: "Mueble De Cocina Alacena",
+				image: "./img/mueble-de-cocina-alacena.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -3669,6 +3683,7 @@ var app= new Vue ({
 				//NUMERO 28
 				code: 27,
 				name: "Mueble Microondas Organizador Cocina",
+				image: "./img/mueble-microondas-organizador-cocina.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -3801,6 +3816,7 @@ var app= new Vue ({
 				//NUMERO 29
 				code: 28,
 				name: "FATAL ERROR - Mueble Para Tv",
+				image: "./img/mueble-para-tv.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -3910,6 +3926,7 @@ var app= new Vue ({
 				//NUMERO 30
 				code: 29,
 				name: "Escritorio Moderno Mueble Pc Oficina",
+				image: "./img/escritorio-moderno-mueble-pc-oficina.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -4060,6 +4077,7 @@ var app= new Vue ({
 				//NUMERO 32
 				code: 30,
 				name: "Despensero Estante Con 2 Puertas",
+				image: "./img/despensero-estante-con-2-puertas.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -4221,6 +4239,7 @@ var app= new Vue ({
 				//NUMERO 33
 				code: 31,
 				name: "Estante Librero Con 4 Estantes",
+				image: "./img/estante-librero-con-4-estantes.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -4330,6 +4349,7 @@ var app= new Vue ({
 				//NUMERO 39
 				code: 32,
 				name: "Mueble De Cocina",
+				image: "./img/mueble-de-cocina.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -4529,6 +4549,7 @@ var app= new Vue ({
 				//NUMERO 40
 				code: 33,
 				name: "Escritorio con Armario",
+				image: "./img/escritorio-con-armario.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -4722,6 +4743,7 @@ var app= new Vue ({
 				//NUMERO 41
 				code: 34,
 				name: "Estante Repisa ",
+				image: "./img/estante-repisa.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -4839,6 +4861,7 @@ var app= new Vue ({
 				//NUMERO 42
 				code: 35,
 				name: "Centro De Entretenimiento",
+				image: "./img/centro-de-entretenimiento.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -5033,6 +5056,7 @@ var app= new Vue ({
 				//NUMERO 43
 				code: 36,
 				name: "Mesa De Centro",
+				image: "./img/mesa-de-centro.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -5186,6 +5210,7 @@ var app= new Vue ({
 				//NUMERO 44
 				code: 37,
 				name: "Estante Gabinete Para Ba"+String.fromCharCode(241)+"o",
+				image: "./img/estante-gabinete-para-bano.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -5316,6 +5341,7 @@ var app= new Vue ({
 				//NUMERO 45
 				code: 38,
 				name: "Escritorio Moderno Minimalista",
+				image: "./img/escritorio-moderno-minimalista.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -5464,6 +5490,7 @@ var app= new Vue ({
 				//NUMERO 46
 				code: 39,
 				name: "Estante Librero Repisa Minimalista",
+				image: "./img/estante-librero-repisa-minimalista.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -5613,6 +5640,7 @@ var app= new Vue ({
 				//NUMERO 47
 				code: 40,
 				name: "Mesita Moderna Y Practica Desayunadora",
+				image: "./img/mesita-moderna-y-practica-desayunadora.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
@@ -5727,6 +5755,7 @@ var app= new Vue ({
 				//NUMERO 48
 				code: 41,
 				name: "Estante Separador De Ambientes Minimalista",
+				image: "./img/estante-separador-de-ambiente-minimalista.jpg",
 
 				fixedCosts: 50,
 				gain: 120,
