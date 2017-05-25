@@ -37,6 +37,7 @@ var app= new Vue ({
 		furnitures: [
 			{
 				code: 1,
+				image: "https://http2.mlstatic.com/muebles-escritorio-velador-mesa-de-noche-flotante-D_NQ_NP_741905-MPE25092860113_102016-F.webp",
 				name: "Mesa Flotante Plegable",
 				fixedCosts: 50,
 				gain: 120,
@@ -198,6 +199,7 @@ var app= new Vue ({
 			{
 				code: 2,
 				name: "Mueble Despensero Multiusos",
+				image: "https://http2.mlstatic.com/mueble-despensero-multiusos-de-melamina-de-18mm-D_NQ_NP_308225-MPE25391439389_022017-F.webp",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -373,6 +375,7 @@ var app= new Vue ({
 			{
 				code: 3,
 				name: "Mesa Plegable",
+				image: "https://http2.mlstatic.com/mesa-plegableabatible-para-estudio-envio-gratis-D_NQ_NP_883111-MPE20483672770_112015-F.webp",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -541,6 +544,7 @@ var app= new Vue ({
 			{
 				code: 4,
 				name: "Mueble para Laptop",
+				image: "https://http2.mlstatic.com/mueble-flotante-para-laptop-de-melamina-de-18mm-D_NQ_NP_639125-MPE25391437517_022017-O.webp",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -687,6 +691,7 @@ var app= new Vue ({
 			{
 				code: 6,
 				name: "Estante Despensero",
+				image: "https://http2.mlstatic.com/estante-despensero-de-melamina-de-18mm-D_NQ_NP_817225-MPE25403036087_022017-F.webp",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -811,6 +816,7 @@ var app= new Vue ({
 			{
 				code: 7,
 				name: "Centro de Entretenimiento en L",
+				image: "https://http2.mlstatic.com/centro-de-entretenimiento-en-l-de-melamina-de-18mm-D_NQ_NP_396225-MPE25403153538_022017-F.webp",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -956,6 +962,7 @@ var app= new Vue ({
 			{
 				code: 8,
 				name: "Estante Cubo Doble",
+				image: "https://http2.mlstatic.com/estante-cubo-doble-de-melamina-de-18mm-D_NQ_NP_357225-MPE25403207293_022017-F.webp",
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,

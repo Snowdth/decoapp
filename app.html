@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+</head>
+<body>
+
+<div id="app" class="container">
+
+	<nav class="nav">
+	  <div class="nav-left">
+	    <a class="nav-item">
+	      <!-- <img src="http://www.decoart.com.pe/img/logo-decoart.png" alt="Bulma logo"> -->
+	      <!-- <img src="https://4.bp.blogspot.com/-EQB2Q51R3Qs/V5VLnTyENbI/AAAAAAAAALM/BVXQZkTV8GEZ9EzLyLXehFFnzS1lCb6XwCKgB/s1600/Deco%2BArte%2BLogo.jpg" alt="Bulma logo"> -->
+	      <!-- <img src="http://decoart.com/img/decoart_logo.gif"> -->
+	      <!-- <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo"> -->
+	      <img src="http://www.deco-art.com.ve/assets/front/img/template/logo_decoart.png" alt="Bulma logo">
+	    </a>
+	  </div>
+
+	  <!-- <div class="nav-center">
+	    <a class="nav-item">
+	      <span class="icon">
+	        <i class="fa fa-github"></i>
+	      </span>
+	    </a>
+	    <a class="nav-item">
+	      <span class="icon">
+	        <i class="fa fa-twitter"></i>
+	      </span>
+	    </a>
+	  </div> -->
+
+	  <!-- <span class="nav-toggle">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	  </span> -->
+
+	  <div class="nav-right nav-menu">
+	    <a class="nav-item">
+	      Home
+	    </a>
+	    <a class="nav-item">
+	      Documentation
+	    </a>
+	    <a class="nav-item">
+	      Blog
+	    </a>
+
+	    <div class="nav-item">
+	      <div class="field is-grouped">
+	        <p class="control">
+	          <a class="button" >
+	            <span class="icon">
+	              <i class="fa fa-twitter"></i>
+	            </span>
+	            <span>Tweet</span>
+	          </a>
+	        </p>
+	        <p class="control">
+	          <a class="button is-primary">
+	            <span class="icon">
+	              <i class="fa fa-download"></i>
+	            </span>
+	            <span>Download</span>
+	          </a>
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</nav><br>
+
+	<div class="columns">
+	  <div class="column is-2">
+	  	<aside class="menu">
+	  	  <p class="menu-label">
+	  	    General
+	  	  </p>
+	  	  <ul class="menu-list">
+	  	    <li><a class="is-active">Muebles</a></li>
+	  	    <li><a>Customers</a></li>
+	  	  </ul>
+	  	  <!-- <p class="menu-label">
+	  	    Administration
+	  	  </p>
+	  	  <ul class="menu-list">
+	  	    <li><a>Team Settings</a></li>
+	  	    <li>
+	  	      <a>Manage Your Team</a>
+	  	      <ul>
+	  	        <li><a>Members</a></li>
+	  	        <li><a>Plugins</a></li>
+	  	        <li><a>Add a member</a></li>
+	  	      </ul>
+	  	    </li>
+	  	    <li><a>Invitations</a></li>
+	  	    <li><a>Cloud Storage Environment Settings</a></li>
+	  	    <li><a>Authentication</a></li>
+	  	  </ul>
+	  	  <p class="menu-label">
+	  	    Transactions
+	  	  </p>
+	  	  <ul class="menu-list">
+	  	    <li><a>Payments</a></li>
+	  	    <li><a>Transfers</a></li>
+	  	    <li><a>Balance</a></li>
+	  	  </ul> -->
+	  	</aside>
+	  </div>
+	  <div class="column">
+
+	  	<!-- <div class="field has-addons">
+	  	  <p class="control">
+	  	    <input class="input" type="text" placeholder="Find a repository">
+	  	  </p>
+	  	  <p class="control">
+	  	    <a class="button">
+	  	      Search
+	  	    </a>
+	  	  </p>
+	  	</div> -->
+
+	  	<section v-show="view == 'menu'">
+		  	<table class="table">
+		  	  <thead>
+		  	    <tr>
+		  	      <th>Codigo</th>
+		  	      <th>Imagen</th>
+		  	      <th>Nombre</th>
+		  	      <th>Costo Produccion</th>
+		  	      <th>Ganancia</th>
+		  	      <th>Precio Venta</th>
+		  	    </tr>
+		  	  </thead>
+		  	  <tbody>
+		  	    <tr v-for="(furniture, index) in furnitures">
+		  	      <th>{{ furniture.code }}</th>
+		  	      <td><figure class="image is-64x64">
+	  						<img :src="furniture.image" style="max-height: 65px; width: auto;">
+							</figure></td>
+		  	      <td><a title="Leicester City F.C." v-on:click="selectFurniture(index)">{{ furniture.name }}</strong>
+		  	      </td>
+		  	    </tr>
+		  	  </tbody>
+		  	</table>
+			</section>
+
+			<section v-show="view == 'furniture'" >
+
+				<button v-on:click="back">atras</button>
+
+				<p>Nombre: {{ furniture.name }}</p>
+
+				<div class="medidas">
+
+					<div class="a">
+						<div class="title-section">
+							<h3>A</h3>
+						</div>
+
+						<div class="content" v-for="med in furniture.data.X">
+							<h5>{{med.name}}</h5>
+							<ul>
+								<li>
+									<div class="width-letra">
+										<span>Cantidad</span>
+									</div>
+									<input v-model="med.cantidad" v-on:change="reCalculate(), changeTotalWidth()">
+								</li>
+								<li>
+									<div class="width-letra" >
+										<span>Altura</span>
+									</div>
+									<input v-model="med.height" v-on:change="reCalculate">
+								</li>
+								<li>
+									<div class="width-letra">
+										<span>Ancho</span>
+									</div>
+									<input v-model="med.width" v-on:change="reCalculate">
+								</li>
+								<li v-if="med.type != 'nordex'">
+									<select class="color"
+										v-model="med.color" v-on:change="reCalculate">
+										<option value="white">Blanco</option>
+										<option value="black">Negro</option>
+										<option value="other">Other</option>
+										<option value="nordex">Nordex</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="b">
+						<div class="title-section">
+							<h3>B</h3>
+						</div>
+
+						<div class="content" v-for="med in furniture.data.Y">
+							<h5>{{med.name}}</h5>
+							<ul>
+								<li>
+									<div class="width-letra">
+										<span>Cantidad</span>
+									</div>
+									<input v-model="med.cantidad" v-on:change="reCalculate">
+								</li>
+								<li>
+									<div class="width-letra">
+										<span>Alto</span>
+									</div>
+									<input v-model="med.height" v-on:change="reCalculate">
+								</li>
+								<li>
+									<div class="width-letra">
+										<span>Ancho</span>
+									</div>
+									<input v-model="med.width" v-on:change="reCalculate">
+								</li>
+								<li v-if="med.type != 'nordex'">
+									<select class="color"
+										v-model="med.color" v-on:change="reCalculate">
+										<option value="white">Blanco</option>
+										<option value="black">Negro</option>
+										<option value="other">Other</option>
+										<option value="nordex">Nordex</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="c">
+						<div class="title-section">
+							<h3>C</h3>
+						</div>
+
+						<div class="content" v-for="med in furniture.data.Z">
+							<h5>{{med.name}}</h5>
+							<ul>
+								<li>
+									<div class="width-letra">
+										<span>Cantidad</span>
+									</div>
+									<input v-model="med.cantidad" v-on:change="reCalculate(), changeTotalWidth()">
+								</li>
+								<li>
+									<div class="width-letra">
+										<span>Alto</span>
+									</div>
+									<input v-model="med.height" v-on:change="reCalculate">
+								</li>
+								<li>
+									<div class="width-letra">
+										<span>Ancho</span>
+									</div>
+									<input v-model="med.width" v-on:change="reCalculate">
+								</li>
+								<li v-if="med.type != 'nordex'">
+									<select class="color"
+										v-model="med.color" v-on:change="reCalculate">
+										<option value="white">Blanco</option>
+										<option value="black">Negro</option>
+										<option value="other">Other</option>
+										<option value="nordex">Nordex</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="Extras">
+						<div class="title-section">
+							<h3>Extras</h3>
+
+						</div>
+
+						<div class="content" v-for="med in furniture.data.Extras">
+							<h5>{{med.name}}</h5>
+							<ul>
+								<li>
+									<div class="width-letra">
+										<span v-if="med.label">Metro</span>
+										<span v-if="!med.label">Cantidad</span>
+									</div>
+
+									<input v-if="med.cantidad" v-model="med.cantidad" v-on:change="reCalculate">
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="precio-total">
+
+					<div class="top-30">
+						<div class="inline-block">
+							<h5>Alto</h5>
+							<input v-on:change="changeTotalHeight(),reCalculate()" v-model="furniture.data.totalHeight" class="input-formulario">
+						</div>
+						<div class="inline-block">
+							<h5>Ancho</h5>
+							<input v-on:change="changeTotalWidth(),reCalculate()" v-model="furniture.data.totalWidth" class="input-formulario">
+						</div>
+						<div class="inline-block">
+							<h5>Profundidad</h5>
+							<input v-on:change="changeTotalDepth(),reCalculate()" v-model="furniture.data.totalDepth" class="input-formulario">
+						</div>
+					</div>
+
+					<table style="width:100%">
+					  <tr style="text-align: left;">
+					    <th></th>
+					    <th>Costo Original</th>
+					    <th>Aumento</th>
+					    <th>Costo Final</th>
+					  </tr>
+					  <tr>
+					    <td>Materiales</td>
+					    <td>{{ originalPrice | decimal }}</td>
+					    <td>{{ aumento | decimal }}</td>
+					    <td>{{ totalPrice | decimal }}</td>
+					  </tr>
+					  <tr>
+					    <td>Costos Fijos</td>
+					    <td>{{ furniture.fixedCosts | decimal }}</td>
+					  </tr>
+					  <tr>
+					    <td>Ganancia</td>
+					    <td>{{ furniture.gain | decimal }}</td>
+					  </tr>
+					</table>
+
+					<!-- <br>
+					<p style="padding-left: 20px;">Materiales</p>
+
+					<div style="background: #f0f8ff;">
+						<div class="top-30 inline-block">
+							<span>Costo Original</span>
+							<h5>{{ originalPrice }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Aumento</span>
+							<h5>{{ aumento.toFixed(2) }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Costo Final</span>
+							<h5>{{ totalPrice }}</h5>
+						</div>
+					</div>
+
+					<br>
+					<p style="padding-left: 20px;">Costos Fijos</p>
+
+					<div style="background: #f0f8ff;">
+						<div class="top-30 inline-block">
+							<span>Costo Original</span>
+							<h5>{{ originalPrice }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Aumento</span>
+							<h5>{{ aumento.toFixed(2) }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Costo Final</span>
+							<h5>{{ totalPrice }}</h5>
+						</div>
+					</div>
+
+					<br>
+					<p style="padding-left: 20px;">Ganancia</p>
+
+					<div style="background: #f0f8ff;">
+						<div class="top-30 inline-block">
+							<span>Costo Original</span>
+							<h5>{{ originalPrice  }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Aumento</span>
+							<h5>{{ aumento | decimal }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Costo Final</span>
+							<h5>{{ totalPrice }}</h5>
+						</div>
+					</div>
+
+					<br>
+					<p style="padding-left: 20px;">Precio de Venta</p>
+
+					<div style="background: #f0f8ff;">
+						<div class="top-30 inline-block">
+							<span>Costo Original</span>
+							<h5>{{ originalPrice }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Aumento</span>
+							<h5>{{ aumento.toFixed(2) }}</h5>
+						</div>
+						<div class="top-30 inline-block">
+							<span>Costo Final</span>
+							<h5>{{ totalPrice }}</h5>
+						</div>
+					</div> -->
+				</div>
+			</section>
+
+
+
+	  </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://unpkg.com/vue@2.2.6"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
