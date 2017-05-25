@@ -4988,11 +4988,13 @@ var app= new Vue ({
 
 	mounted: function () {
 
-		this.furniture = this.furnitures[0]
-		this.reCalculate()
+		// this.furniture = this.furnitures[0]
+		// this.reCalculate()
 
 		for (var i = 0; i < this.furnitures.length; i++) {
 			this.furniture = this.furnitures[i]
+			this.furniture.manufacturingCost = 10
+			this.furniture.installationCost = 10
 			this.reCalculate()
 		}
 	},
@@ -5241,6 +5243,10 @@ var app= new Vue ({
       }
 
       this.totalPrice = this.totalCost + this.totalCostExtras
+
+      // Calculate Costs
+      this.furniture.materialsCost = ( this.totalCostX + this.totalCostY + this.totalCostZ ) + this.totalCostExtras
+      this.furniture.productionCost = this.furniture.materialsCost + this.furniture.manufacturingCost + this.furniture.installationCost
 
       if (this.original) {
       	console.log('original!')

@@ -5,7 +5,7 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -43,32 +43,14 @@
 	  </span> -->
 
 	  <div class="nav-right nav-menu">
-	    <a class="nav-item">
-	      Home
-	    </a>
-	    <a class="nav-item">
-	      Documentation
-	    </a>
-	    <a class="nav-item">
-	      Blog
-	    </a>
-
 	    <div class="nav-item">
 	      <div class="field is-grouped">
 	        <p class="control">
-	          <a class="button" >
-	            <span class="icon">
-	              <i class="fa fa-twitter"></i>
-	            </span>
-	            <span>Tweet</span>
-	          </a>
-	        </p>
-	        <p class="control">
 	          <a class="button is-primary">
 	            <span class="icon">
-	              <i class="fa fa-download"></i>
+	            	<i class="fa fa-money"></i>
 	            </span>
-	            <span>Download</span>
+	            <span>Cotizar</span>
 	          </a>
 	        </p>
 	      </div>
@@ -127,6 +109,39 @@
 	  	</div> -->
 
 	  	<section v-show="view == 'menu'">
+
+	  		<nav class="nav">
+	  		  <div class="nav-left">
+	  		    <div class="nav-item">
+	  		    	<div class="field has-addons">
+	  		    	  <p class="control">
+	  		    	    <input class="input" type="text" placeholder="Mesa plegable">
+	  		    	  </p>
+	  		    	  <p class="control">
+	  		    	    <a class="button">
+	  		    	      Buscar
+	  		    	    </a>
+	  		    	  </p>
+	  		    	</div>
+	  		    </div>
+	  		  </div>
+
+	  		  <div class="nav-right nav-menu">
+	  		    <div class="nav-item">
+	  		      <div class="field is-grouped">
+	  		        <p class="control">
+	  		          <a class="button">
+	  		            <span class="icon">
+	  		              <i class="fa fa-plus"></i>
+	  		            </span>
+	  		            <span>Nuevo Mueble</span>
+	  		          </a>
+	  		        </p>
+	  		      </div>
+	  		    </div>
+	  		  </div>
+	  		</nav><br>
+
 		  	<table class="table">
 		  	  <thead>
 		  	    <tr>
@@ -136,7 +151,8 @@
 		  	      <th><abbr title="Costo de Materiales">CM</abbr></th>
 		  	      <th><abbr title="Costo de Fabricacion">CF</abbr></th>
 		  	      <th><abbr title="Costo de Instalacion">CI</abbr></th>
-		  	      <th><abbr title="Costo de Entrega">CE</abbr></th>
+		  	      <th>Costo de Produccion</th>
+		  	      <!-- <th><abbr title="Costo de Entrega">CE</abbr></th> -->
 		  	      <!-- <th>Ganancia</th>
 		  	      <th>Precio Venta</th> -->
 		  	    </tr>
@@ -152,10 +168,11 @@
 		  	      <td>
 		  	      	<a title="Leicester City F.C." v-on:click="selectFurniture(index)">{{ furniture.name }}</a>
 		  	      </td>
-		  	      <td>{{ furniture.materialsCost }}</td>
+		  	      <td>{{ furniture.materialsCost | decimal }}</td>
 		  	      <td>{{ furniture.manufacturingCost }}</td>
 		  	      <td>{{ furniture.installationCost }}</td>
-		  	      <td>{{ furniture.deliveryCost }}</td>
+		  	      <td>{{ furniture.productionCost | decimal }}</td>
+		  	      <!-- <td>{{ furniture.deliveryCost }}</td> -->
 		  	    </tr>
 		  	  </tbody>
 		  	</table>
