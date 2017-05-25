@@ -39,6 +39,23 @@ var app= new Vue ({
 				code: 1,
 				image: "https://http2.mlstatic.com/muebles-escritorio-velador-mesa-de-noche-flotante-D_NQ_NP_741905-MPE25092860113_102016-F.webp",
 				name: "Mesa Flotante Plegable",
+
+				// Costo de Materiales
+				materialsCost: null,
+				// Costo de Faricacion
+				manufacturingCost: 10,
+				// Costo de Instalacion
+				installationCost: 10,
+
+				// Costo de produccion
+				productionCost: null,
+
+				// Costo de Entrega
+				deliveryCost: 0,
+
+				// Publicacion de Mercado Libre
+				publicationURL: "",
+
 				fixedCosts: 50,
 				gain: 120,
 				salePrice: 200,
@@ -681,13 +698,13 @@ var app= new Vue ({
 
 				}
 			},
-			{
-				code: 5,
-				name: "NO DISPONIBLE - Repisa BioCuero",
-				fixedCosts: 50,
-				gain: 120,
-				salePrice: 200,
-			},
+			// {
+			// 	code: 5,
+			// 	name: "NO DISPONIBLE - Repisa BioCuero",
+			// 	fixedCosts: 50,
+			// 	gain: 120,
+			// 	salePrice: 200,
+			// },
 			{
 				code: 6,
 				name: "Estante Despensero",
@@ -2894,11 +2911,11 @@ var app= new Vue ({
 
 				}
 			},
-			{
-				// NUMERO 23
-				code: 22,
-				name: "PENDIENTE - Mesa De Noche Velador",
-			},
+			// {
+			// 	// NUMERO 23
+			// 	code: 22,
+			// 	name: "PENDIENTE - Mesa De Noche Velador",
+			// },
 			{
 				code: 23,
 				name: "Biblioteca Moderna Librero 10 Espacios",
@@ -4970,9 +4987,16 @@ var app= new Vue ({
 	},
 
 	mounted: function () {
+
 		this.furniture = this.furnitures[0]
 		this.reCalculate()
+
+		for (var i = 0; i < this.furnitures.length; i++) {
+			this.furniture = this.furnitures[i]
+			this.reCalculate()
+		}
 	},
+
 	methods: {
 
 		selectFurniture: function (index) {

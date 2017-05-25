@@ -133,19 +133,29 @@
 		  	      <th>Codigo</th>
 		  	      <th>Imagen</th>
 		  	      <th>Nombre</th>
-		  	      <th>Costo Produccion</th>
-		  	      <th>Ganancia</th>
-		  	      <th>Precio Venta</th>
+		  	      <th><abbr title="Costo de Materiales">CM</abbr></th>
+		  	      <th><abbr title="Costo de Fabricacion">CF</abbr></th>
+		  	      <th><abbr title="Costo de Instalacion">CI</abbr></th>
+		  	      <th><abbr title="Costo de Entrega">CE</abbr></th>
+		  	      <!-- <th>Ganancia</th>
+		  	      <th>Precio Venta</th> -->
 		  	    </tr>
 		  	  </thead>
 		  	  <tbody>
 		  	    <tr v-for="(furniture, index) in furnitures">
 		  	      <th>{{ furniture.code }}</th>
-		  	      <td><figure class="image is-64x64">
-	  						<img :src="furniture.image" style="max-height: 65px; width: auto;">
-							</figure></td>
-		  	      <td><a title="Leicester City F.C." v-on:click="selectFurniture(index)">{{ furniture.name }}</strong>
+		  	      <td>
+		  	      	<figure class="image is-64x64">
+	  							<img :src="furniture.image" style="max-height: 65px; width: auto;">
+								</figure>
+							</td>
+		  	      <td>
+		  	      	<a title="Leicester City F.C." v-on:click="selectFurniture(index)">{{ furniture.name }}</a>
 		  	      </td>
+		  	      <td>{{ furniture.materialsCost }}</td>
+		  	      <td>{{ furniture.manufacturingCost }}</td>
+		  	      <td>{{ furniture.installationCost }}</td>
+		  	      <td>{{ furniture.deliveryCost }}</td>
 		  	    </tr>
 		  	  </tbody>
 		  	</table>
