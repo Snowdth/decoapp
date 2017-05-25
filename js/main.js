@@ -23,6 +23,25 @@ var app= new Vue ({
 			}
 		},
 
+		canteado: {
+			white: {
+				price: 145,
+				centimeterPrice: 0.002776926612532557
+			},
+			black: {
+				price: 189,
+				centimeterPrice: 0.0036195802053010573
+			},
+			other: {
+				price: 200,
+				centimeterPrice: 0.003830243603493182
+			},
+			nordex: {
+				price: 36,
+ 				centimeterPrice: 0.001209352324643913
+			}
+		},
+
 		totalCostX: 0,
 		totalCostY: 0,
 		totalCostZ: 0,
@@ -78,6 +97,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -87,6 +111,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -96,6 +125,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -107,6 +141,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -118,6 +157,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Parte de Inferior',
@@ -126,6 +170,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Medios Horizontales',
@@ -134,6 +183,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -6075,14 +6129,21 @@ var app= new Vue ({
 
 			for (var i = 0; i < this.furniture.data.X.length; i++) {
 				var med = this.furniture.data.X[i]
+				var canteado = 0
+				if(med.canteado)
+					canteado = med.height * med.canteado.height +  med.width * med.canteado.width
+
 				if(med.color == 'white') {
 					med.cost = med.cantidad * med.area * this.table.white.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.white.centimeterPrice
 				}
 				if(med.color == 'black'){
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.black.centimeterPrice
 				}
 				if(med.color == 'other'){
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.other.centimeterPrice
 				}
 				if(med.color == 'nordex'){
 					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
@@ -6091,14 +6152,21 @@ var app= new Vue ({
 
 			for (var i = 0; i < this.furniture.data.Y.length; i++) {
 				var med = this.furniture.data.Y[i]
+				var canteado = 0
+				if(med.canteado)
+					canteado = med.height * med.canteado.height +  med.width * med.canteado.width
+
 				if(med.color == 'white') {
 					med.cost = med.cantidad * med.area * this.table.white.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.white.centimeterPrice
 				}
 				if(med.color == 'black'){
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.black.centimeterPrice
 				}
 				if(med.color == 'other'){
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.other.centimeterPrice
 				}
 				if(med.color == 'nordex'){
 					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
@@ -6107,14 +6175,21 @@ var app= new Vue ({
 
 			for (var i = 0; i < this.furniture.data.Z.length; i++) {
 				var med = this.furniture.data.Z[i]
+				var canteado = 0
+				if(med.canteado)
+					canteado = med.height * med.canteado.height +  med.width * med.canteado.width
+
 				if(med.color == 'white') {
 					med.cost = med.cantidad * med.area * this.table.white.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.white.centimeterPrice
 				}
 				if(med.color == 'black'){
 					med.cost = med.cantidad * med.area * this.table.black.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.black.centimeterPrice
 				}
 				if(med.color == 'other'){
 					med.cost = med.cantidad * med.area * this.table.other.centimeterPrice
+					med.canteadoCost = canteado * this.canteado.other.centimeterPrice
 				}
 				if(med.color == 'nordex'){
 					med.cost = med.cantidad * med.area * this.table.nordex.centimeterPrice
@@ -6141,14 +6216,17 @@ var app= new Vue ({
       for (var i = 0; i < this.furniture.data.X.length; i++) {
         var piece = this.furniture.data.X[i]
         this.totalCostX += piece.cost
+        this.totalCostX += piece.canteadoCost
       }
       for (var i = 0; i < this.furniture.data.Y.length; i++) {
         var piece = this.furniture.data.Y[i]
         this.totalCostY += piece.cost
+        this.totalCostY += piece.canteadoCost
       }
       for (var i = 0; i < this.furniture.data.Z.length; i++) {
         var piece = this.furniture.data.Z[i]
         this.totalCostZ += piece.cost
+        this.totalCostZ += piece.canteadoCost
       }
 
       this.totalCost = this.totalCostX + this.totalCostY + this.totalCostZ
@@ -6165,8 +6243,7 @@ var app= new Vue ({
 
       this.totalPrice = this.totalCost + this.totalCostExtras
 
-      // Calculate Costs
-      this.furniture.materialsCost = ( this.totalCostX + this.totalCostY + this.totalCostZ ) + this.totalCostExtras
+      this.furniture.materialsCost = (this.totalCostX + this.totalCostY + this.totalCostZ) + this.totalCostExtras
       this.furniture.productionCost = this.furniture.materialsCost + this.furniture.manufacturingCost + this.furniture.installationCost
 
       if (this.original) {
@@ -6187,23 +6264,3 @@ var app= new Vue ({
 	}
 
 })
-
-
-
-	//     calculateTotalArea: function () {
-	//       this.totalAreaX = 0
-	//       this.totalAreaY = 0
-	//       this.totalAreaZ = 0
-	//       for (var i = 0; i < this.X.length; i++) {
-	//         var piece = this.X[i]
-	//         this.totalAreaX += piece.area
-	//       }
-	//       for (var i = 0; i < this.Y.length; i++) {
-	//         var piece = this.Y[i]
-	//         this.totalAreaY += piece.area
-	//       }
-	//       for (var i = 0; i < this.Z.length; i++) {
-	//         var piece = this.Z[i]
-	//         this.totalAreaZ += piece.area
-	//       }
-	//     },
