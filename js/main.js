@@ -3089,7 +3089,6 @@ var app= new Vue ({
 
 				}
 			},
->>>>>>> onceavo
 			{
 				//NUMERO 24
 				code: 23,
@@ -5864,7 +5863,6 @@ var app= new Vue ({
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
->>>>>>> onceavo
 							]
 						}
 					}
