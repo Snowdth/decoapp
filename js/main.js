@@ -173,6 +173,7 @@ var app= new Vue ({
 							canteado: {
 								height: 0,
 								width: 1
+
 							},
 							canteadoCost: 0
 						},
