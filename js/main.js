@@ -3661,9 +3661,9 @@ var app= new Vue ({
 							},
 							canteadoCost: 0,
 						},
-						
+
 					],
-			
+
 
 					Y:[
 						{
@@ -3692,10 +3692,10 @@ var app= new Vue ({
 							},
 							canteadoCost: 0,
 						},
-						
+
 					],
 
-			
+
 
 					Z:[
 						{
@@ -4199,7 +4199,7 @@ var app= new Vue ({
 							},
 							canteadoCost: 0,
 						},
-						
+
 					],
 
 
@@ -6452,7 +6452,7 @@ var app= new Vue ({
 						},
 
 					],
-			
+
 
 					Y:[
 						{
@@ -6471,7 +6471,7 @@ var app= new Vue ({
 
 					],
 
-			
+
 
 					Z:[
 						{
@@ -6525,8 +6525,8 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
-		
+
+
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -6536,7 +6536,7 @@ var app= new Vue ({
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -6546,7 +6546,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -6592,7 +6592,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -6636,7 +6636,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -6719,7 +6719,7 @@ var app= new Vue ({
 						width: {
 							x: [
 								{id: 0, prop: 1, type: 'normal'},
-								
+
 							],
 							z:[
 								{id: 0, prop: 1, type: 'normal'},
@@ -6733,7 +6733,7 @@ var app= new Vue ({
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
-								
+
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -6797,7 +6797,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -6828,7 +6828,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -6923,7 +6923,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},								
+								{id: 1, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -6971,7 +6971,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7002,7 +7002,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -7065,7 +7065,7 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},								
+								{id: 1, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -7111,7 +7111,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7168,7 +7168,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -7222,7 +7222,7 @@ var app= new Vue ({
 								width: 2
 							},
 							canteadoCost: 0,
-						},						
+						},
 					],
 
 
@@ -7263,7 +7263,7 @@ var app= new Vue ({
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
-								{id: 3, prop: 1, type: 'normal'},								
+								{id: 3, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -7311,7 +7311,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7329,7 +7329,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -7357,7 +7357,7 @@ var app= new Vue ({
 								width: 2
 							},
 							canteadoCost: 0,
-						},						
+						},
 					],
 
 
@@ -7390,7 +7390,7 @@ var app= new Vue ({
 						},
 						depth: {
 							y: [
-								{id: 0, prop: 1, type: 'normal'},								
+								{id: 0, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -7436,7 +7436,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7480,7 +7480,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -7521,7 +7521,7 @@ var app= new Vue ({
 								width: 2
 							},
 							canteadoCost: 0,
-						},						
+						},
 					],
 
 
@@ -7559,7 +7559,7 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
-								{id: 2, prop: 1, type: 'normal'},								
+								{id: 2, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -7606,7 +7606,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7663,7 +7663,7 @@ var app= new Vue ({
 						},
 					],
 
-			
+
 
 					Z:[
 						{
@@ -7691,7 +7691,7 @@ var app= new Vue ({
 								width: 2
 							},
 							canteadoCost: 0,
-						},				
+						},
 					],
 
 
@@ -7730,7 +7730,7 @@ var app= new Vue ({
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
-								{id: 3, prop: 1, type: 'normal'},								
+								{id: 3, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -7790,7 +7790,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7807,10 +7807,10 @@ var app= new Vue ({
 							},
 							canteadoCost: 0,
 						},
-						
+
 					],
 
-			
+
 
 					Z:[
 						{
@@ -7920,7 +7920,7 @@ var app= new Vue ({
 						},
 						depth: {
 							y: [
-								{id: 0, prop: 1, type: 'normal'},								
+								{id: 0, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
@@ -7968,7 +7968,7 @@ var app= new Vue ({
 							canteadoCost: 0,
 						},
 					],
-			
+
 
 					Y:[
 						{
@@ -7997,10 +7997,10 @@ var app= new Vue ({
 							},
 							canteadoCost: 0,
 						},
-						
+
 					],
 
-			
+
 
 					Z:[
 						{
@@ -8074,19 +8074,19 @@ var app= new Vue ({
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
-								
+
 							]
 						},
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
-								{id: 1, prop: 1, type: 'normal'},								
+								{id: 1, prop: 1, type: 'normal'},
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
 								{id: 2, prop: 1, type: 'normal'},
-								
+
 							]
 						}
 					}
@@ -8107,10 +8107,17 @@ var app= new Vue ({
 		// this.furniture = this.furnitures[0]
 		// this.reCalculate()
 
+		this.gainRazon = 0.45
+
 		for (var i = 0; i < this.furnitures.length; i++) {
 			this.furniture = this.furnitures[i]
-			this.furniture.manufacturingCost = 10
-			this.furniture.installationCost = 10
+			this.furniture.manufacturingCost = 15
+			this.furniture.installationCost = 12
+			this.furniture.deliveryCost = 12
+
+			this.furniture.corteCost = 15
+			this.furniture.taxiCost = 10
+
 			this.reCalculate()
 		}
 	},
@@ -8385,7 +8392,20 @@ var app= new Vue ({
       this.totalPrice = this.totalCost + this.totalCostExtras
 
       this.furniture.materialsCost = (this.totalCostX + this.totalCostY + this.totalCostZ) + this.totalCostExtras
-      this.furniture.productionCost = this.furniture.materialsCost + this.furniture.manufacturingCost + this.furniture.installationCost
+      this.furniture.productionCost = this.furniture.materialsCost +
+      																this.furniture.corteCost +
+      																this.furniture.taxiCost +
+      																this.furniture.manufacturingCost +
+      																this.furniture.installationCost
+
+      this.furniture.salePrice = this.furniture.productionCost / (1-this.gainRazon)
+      this.furniture.gain =  this.gainRazon * this.furniture.salePrice
+
+      // CP + G = PV
+      // CP + r*PV = PV
+      // CP = (1-r)PV
+      // CP / (1-r) = PV
+      // G = 0.3PV
 
       if (this.original) {
       	console.log('original!')
