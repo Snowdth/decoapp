@@ -26,19 +26,19 @@ var app= new Vue ({
 		canteado: {
 			white: {
 				price: 145,
-				centimeterPrice: 0.002776926612532557
+				centimeterPrice: 0.009
 			},
 			black: {
 				price: 189,
-				centimeterPrice: 0.0036195802053010573
+				centimeterPrice: 0.011
 			},
 			other: {
 				price: 200,
-				centimeterPrice: 0.003830243603493182
+				centimeterPrice: 0.015
 			},
 			nordex: {
-				price: 36,
- 				centimeterPrice: 0.001209352324643913
+				price: 0,
+ 				centimeterPrice: 0
 			}
 		},
 
@@ -486,7 +486,7 @@ var app= new Vue ({
 			},
 			{
 				code: 3,
-				name: "Mesa Plegable",
+				name: "!Mesa Plegable",
 				image: "./img/mesa-plegable.jpg",
 				fixedCosts: 50,
 				gain: 120,
@@ -829,7 +829,7 @@ var app= new Vue ({
 					relations: {
 						height: {
 							x: [
-								{id: 0, prop: 1, type: 'normal'},
+								{id: 0, prop: 0.59, type: 'normal'},
 							],
 							y: [
 								{id: 0, prop: 1, type: 'normal'}
@@ -1017,7 +1017,7 @@ var app= new Vue ({
 			},
 			{
 				code: 7,
-				name: "Centro de Entretenimiento en L",
+				name: "!Centro de Entretenimiento en L",
 				image: "./img/centro-de-entretenimiento-en-l.jpg",
 				fixedCosts: 50,
 				gain: 120,
