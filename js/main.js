@@ -126,8 +126,8 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 							canteado: {
-								height: 2,
-								width: 2
+								height: 0,
+								width: 1
 							},
 							canteadoCost: 0
 						},
@@ -142,8 +142,8 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 							canteado: {
-								height: 2,
-								width: 2
+								height: 1,
+								width: 1
 							},
 							canteadoCost: 0
 						},
@@ -159,7 +159,7 @@ var app= new Vue ({
 							area:0,
 							canteado: {
 								height: 2,
-								width: 2
+								width: 1
 							},
 							canteadoCost: 0
 						},
@@ -171,8 +171,8 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 							canteado: {
-								height: 2,
-								width: 2
+								height: 0,
+								width: 1
 							},
 							canteadoCost: 0
 						},
@@ -184,8 +184,8 @@ var app= new Vue ({
 							color:'white',
 							area:0,
 							canteado: {
-								height: 2,
-								width: 2
+								height: 0,
+								width: 1
 							},
 							canteadoCost: 0
 						},
@@ -293,6 +293,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							type: 'nordex',
@@ -303,6 +308,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -315,6 +325,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Laterales de Contenido',
@@ -323,6 +338,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Separador Vertical de Contenido',
@@ -331,6 +351,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -342,6 +367,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -351,6 +381,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Separador Horizontal de Contenido',
@@ -359,6 +394,11 @@ var app= new Vue ({
 							cantidad:6,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -469,6 +509,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 
@@ -482,6 +527,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -494,6 +544,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -503,6 +558,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Separador Horizontal de Contenido',
@@ -511,6 +571,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Parte Inferior de Mesa',
@@ -519,6 +584,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Pequeña melamina',
@@ -527,6 +597,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -561,7 +636,7 @@ var app= new Vue ({
 						{
 							name:'Tornillos',
 							costo:0.047,
-							cantidad:52,
+							cantidad:30,
 						},
 						{
 							name:'Varillas',
@@ -640,6 +715,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							id: 2,
@@ -650,6 +730,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -662,6 +747,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -677,6 +767,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -686,6 +781,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -716,6 +816,11 @@ var app= new Vue ({
 							name:'Pistones o Bombas Hidraulicas o Brasos',
 							costo:4.50,
 							cantidad:2,
+						},
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
 						},
 
 					],
@@ -785,6 +890,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							type: 'nordex',
@@ -795,6 +905,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -807,6 +922,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -823,6 +943,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -832,6 +957,11 @@ var app= new Vue ({
 							cantidad:5,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -910,6 +1040,11 @@ var app= new Vue ({
 							cantidad:0,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						}
 					],
 					Y:[
@@ -920,6 +1055,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Lateral 2',
@@ -928,6 +1068,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Lateral 3',
@@ -936,6 +1081,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Lateral 4',
@@ -944,6 +1094,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -959,6 +1114,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -968,6 +1128,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Inferior',
@@ -976,6 +1141,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1057,6 +1227,11 @@ var app= new Vue ({
 							cantidad:0,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1070,6 +1245,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1083,6 +1263,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -1092,6 +1277,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 
@@ -1167,6 +1357,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							type: 'nordex',
@@ -1177,6 +1372,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1186,6 +1386,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1199,6 +1404,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1212,6 +1422,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -1221,14 +1436,24 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Separadores Horizontales ',
-							height:37,
+							height:27,
 							width:36.4,
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1324,6 +1549,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1333,6 +1563,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							type: 'nordex',
@@ -1343,6 +1578,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -1354,6 +1594,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Medio',
@@ -1362,6 +1607,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -1375,6 +1625,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Medio',
@@ -1383,6 +1638,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1483,6 +1743,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1492,6 +1757,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1501,6 +1771,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1514,6 +1789,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1527,6 +1807,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -1536,6 +1821,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1624,6 +1914,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1633,6 +1928,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1642,6 +1942,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1655,6 +1960,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Tapas laterales',
@@ -1663,6 +1973,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1676,6 +1991,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 
 						{
@@ -1686,6 +2006,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1780,6 +2105,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1789,6 +2119,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -1798,6 +2133,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1811,6 +2151,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Separacion vertical',
@@ -1819,6 +2164,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -1831,6 +2181,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1945,6 +2300,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -1958,6 +2318,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -1970,6 +2335,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Melaminas Z',
@@ -1978,6 +2348,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 
@@ -2053,6 +2428,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -2062,6 +2442,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -2074,6 +2459,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -2086,6 +2476,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Inferior Horizontal',
@@ -2094,6 +2489,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 
@@ -2171,6 +2571,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -2184,6 +2589,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -2197,6 +2607,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Separadores Horizontales',
@@ -2205,6 +2620,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 
@@ -2282,6 +2702,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -2291,6 +2716,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -2300,6 +2730,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -2309,6 +2744,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0
 						},
 						{
 							cost:0,
@@ -2318,6 +2758,11 @@ var app= new Vue ({
 							cantidad:8,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -2331,6 +2776,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Cajon - Tapas Laterales',
@@ -2339,6 +2789,11 @@ var app= new Vue ({
 							cantidad:8,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -2352,6 +2807,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Mueble - Soporte',
@@ -2360,6 +2820,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Cajon - Superficie NORDEX',
@@ -2368,6 +2833,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Cajon - Soportes',
@@ -2376,6 +2846,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 
@@ -2476,6 +2951,11 @@ var app= new Vue ({
 							cantidad:0,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 
 					],
@@ -2489,6 +2969,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 						{
 							name:'Lateral Medio',
@@ -2497,6 +2982,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0
 						},
 					],
 
@@ -2510,6 +3000,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separadores Horizontales',
@@ -2518,9 +3013,12 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0
 						},
-
-
 					],
 
 
@@ -2600,6 +3098,25 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Repisa - Fondo de un cuadro pequeño',
+							height:10,
+							width:21.4,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -2613,6 +3130,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Repisa - Laterales largos',
@@ -2621,14 +3143,24 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Repisa - Lateral pequeño',
-							height:10,
-							width:23.2,
+							height:21.4,
+							width:25,
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -2643,6 +3175,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Repisa - Superior',
@@ -2651,6 +3188,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Repisa - Divisiones',
@@ -2659,6 +3201,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Repisa - Inferior',
@@ -2667,6 +3214,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -2754,6 +3306,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -2767,6 +3324,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisores',
@@ -2775,6 +3337,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -2788,6 +3355,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -2864,6 +3436,11 @@ var app= new Vue ({
 							cantidad:0,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -2877,6 +3454,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Laterales Medios Largos',
@@ -2885,6 +3467,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Laterales Medios Peque'+String.fromCharCode(241)+'os',
@@ -2893,6 +3480,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -2906,6 +3498,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Alrededor Horizontal',
@@ -2914,6 +3511,11 @@ var app= new Vue ({
 							cantidad:8,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Medios Horizontales',
@@ -2922,6 +3524,11 @@ var app= new Vue ({
 							cantidad:5,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -2976,11 +3583,10 @@ var app= new Vue ({
 
 				}
 			},
-
 			{
 				// NUMERO 23
 				code: 22,
-				name: "PENDIENTE - Mesa De Noche Velador",
+				name: "Mesa De Noche Velador",
 				image: "./img/mesa-de-noche-velador.jpg",
 
 				fixedCosts: 50,
@@ -3006,6 +3612,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -3015,6 +3626,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -3024,6 +3640,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -3033,6 +3654,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						
 					],
@@ -3046,6 +3672,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Cajon - Tapas Laterales ',
@@ -3054,6 +3685,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						
 					],
@@ -3068,6 +3704,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Inferior',
@@ -3076,6 +3717,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							type: 'nordex',
@@ -3085,6 +3731,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -3183,6 +3834,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3196,6 +3852,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Lateral Medio',
@@ -3204,6 +3865,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -3217,6 +3883,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separadores Horizontales',
@@ -3225,6 +3896,11 @@ var app= new Vue ({
 							cantidad:8,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3301,6 +3977,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -3310,6 +3991,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -3324,6 +4010,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -3337,6 +4028,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separadores Horizontales',
@@ -3345,6 +4041,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3407,7 +4108,7 @@ var app= new Vue ({
 			{
 				//NUMERO 26
 				code: 25,
-				name: "Mueble Centro De Entretenimiento",
+				name: "PENDIENTE - Mueble Centro De Entretenimiento",
 				image: "./img/mueble-centro-de-entretenimiento.jpg",
 
 				fixedCosts: 50,
@@ -3433,6 +4134,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -3442,27 +4148,26 @@ var app= new Vue ({
 							cantidad:2,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
 							name:'Negro - Cajon - Tapas Parte delantera y trasera ',
 							height:15,
-							width:54.6,
+							width:48.8,
 							cantidad:4,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
-						{
-							cost:0,
-							name:'Blanco - Inferior ',
-							height:7,
-							width:110,
-							cantidad:2,
-							color:'white',
-							area:0,
-						},
-
-
 					],
 
 
@@ -3474,6 +4179,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Negro - Cajon - Tapas Laterales',
@@ -3482,15 +4192,13 @@ var app= new Vue ({
 							cantidad:4,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
-						{
-							name:'Blanco - Laterales',
-							height:7,
-							width:38.4,
-							cantidad:2,
-							color:'white',
-							area:0,
-						},
+						
 					],
 
 
@@ -3503,6 +4211,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Blanco - Superior para modem',
@@ -3511,6 +4224,38 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Blanco - Inferior ',
+							height:7,
+							width:110,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Blanco - Inferior Laterales',
+							height:7,
+							width:38.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							type: 'nordex',
@@ -3520,6 +4265,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Negro - Superior e Inferior',
@@ -3528,6 +4278,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -3548,7 +4303,7 @@ var app= new Vue ({
 							cantidad:2,
 						},
 						{
-							name:'Correderass',
+							name:'Correderas',
 							costo:2.45,
 							cantidad:4,
 						},
@@ -3629,6 +4384,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							type:'nordex',
@@ -3639,6 +4399,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -3648,6 +4413,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -3662,6 +4432,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -3675,6 +4450,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separadores Horizontales',
@@ -3683,6 +4463,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3761,6 +4546,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3774,6 +4564,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -3787,6 +4582,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Superior Puerta Horizontal',
@@ -3795,6 +4595,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisiones Horizontales',
@@ -3803,6 +4608,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3898,6 +4708,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -3911,6 +4726,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -3924,6 +4744,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separador Horizontal',
@@ -3932,6 +4757,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -4004,6 +4834,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4013,6 +4848,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4026,6 +4866,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Lateral Peque'+String.fromCharCode(241)+'o Librero',
@@ -4034,6 +4879,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Lateral Escritorio',
@@ -4042,6 +4892,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4056,6 +4911,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separador Librero',
@@ -4064,6 +4924,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Superficie Escritorio',
@@ -4072,6 +4937,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4156,6 +5026,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4165,6 +5040,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4174,6 +5054,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -4186,6 +5071,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4200,6 +5090,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Superior Puerta',
@@ -4208,6 +5103,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisiones Arriba',
@@ -4216,6 +5116,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisiones Abajo',
@@ -4224,6 +5129,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -4318,6 +5228,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -4330,6 +5245,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4344,6 +5264,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisores Estante',
@@ -4352,6 +5277,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4428,6 +5358,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4437,6 +5372,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4446,6 +5386,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4455,6 +5400,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4464,6 +5414,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4478,6 +5433,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Cajon - Tapas laterales',
@@ -4486,6 +5446,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4502,6 +5467,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Superior e Inferior de Puertas',
@@ -4510,6 +5480,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisiones Horizontales',
@@ -4518,6 +5493,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4627,6 +5607,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 						{
@@ -4637,6 +5622,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4646,6 +5636,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4655,6 +5650,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4669,6 +5669,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4678,6 +5683,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name: 'Armario- peque'+String.fromCharCode(241)+'os soportes',
@@ -4686,6 +5696,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4703,6 +5718,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4712,24 +5732,39 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
 							name:'Armario - Separadores interiores',
-							height:30,
-							width:20,
-							cantidad:2,
-							color:'white',
-							area:0,
-						},
-						{
-							cost:0,
-							name:'Armario - Separadores exteriores',
 							height:36,
 							width:26.4,
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Armario - Separadores exteriores',
+							height:30,
+							width:20,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4822,6 +5857,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4837,6 +5877,11 @@ var app= new Vue ({
 							cantidad:6,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4852,6 +5897,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Horizontal de L',
@@ -4860,6 +5910,11 @@ var app= new Vue ({
 							cantidad:6,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -4939,6 +5994,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 						{
@@ -4949,6 +6009,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -4958,6 +6023,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4972,6 +6042,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Escritorio - Lateral',
@@ -4980,6 +6055,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -4995,6 +6075,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Mueble - forma L Horizontal',
@@ -5003,6 +6088,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -5012,6 +6102,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -5021,6 +6116,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -5030,6 +6130,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -5134,6 +6239,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -5143,6 +6253,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -5156,6 +6271,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Negro- Lateral Pequeño',
@@ -5164,6 +6284,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -5179,6 +6304,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Negro - Superficie Superior',
@@ -5187,6 +6317,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'black',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Blanco - Superficie ',
@@ -5195,6 +6330,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -5289,6 +6429,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -5298,6 +6443,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -5311,6 +6461,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 					],
@@ -5325,6 +6480,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Separadores',
@@ -5333,6 +6493,11 @@ var app= new Vue ({
 							cantidad:3,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -5419,6 +6584,11 @@ var app= new Vue ({
 							cantidad:0,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 			
@@ -5431,6 +6601,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Escritorio - Laterales largos',
@@ -5439,6 +6614,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Complementos - Laterales ',
@@ -5447,6 +6627,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -5460,6 +6645,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Escritorio - peque'+String.fromCharCode(241)+'as melaminas',
@@ -5468,6 +6658,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Complementos - Superior e Inferior ',
@@ -5476,6 +6671,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Complementos - Separadores ',
@@ -5484,6 +6684,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -5569,6 +6774,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 						{
 							cost:0,
@@ -5579,6 +6789,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'nordex',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 			
@@ -5591,6 +6806,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Libreros Peque'+String.fromCharCode(241)+'os - Laterales',
@@ -5599,6 +6819,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -5612,6 +6837,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Librero Grande - Divisiones',
@@ -5620,6 +6850,11 @@ var app= new Vue ({
 							cantidad:4,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Libreros Peque'+String.fromCharCode(241)+'os - Superficie',
@@ -5628,6 +6863,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Libreros Peque'+String.fromCharCode(241)+'os - Divisiones',
@@ -5636,6 +6876,11 @@ var app= new Vue ({
 							cantidad:6,
 							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 
 
@@ -5718,6 +6963,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 					],
 			
@@ -5730,6 +6980,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Lateral Medio',
@@ -5738,6 +6993,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -5751,6 +7011,11 @@ var app= new Vue ({
 							cantidad:1,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Divisiones',
@@ -5759,6 +7024,11 @@ var app= new Vue ({
 							cantidad:2,
 							color:'white',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -5831,8 +7101,13 @@ var app= new Vue ({
 							height:0,
 							width:0,
 							cantidad:0,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
 						},
 					],
 			
@@ -5843,32 +7118,52 @@ var app= new Vue ({
 							height:180,
 							width:30,
 							cantidad:2,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
-							name:'Laterales Pequeño',
+							name:'Laterales Peque'+String.fromCharCode(241)+'o',
 							height:28.2,
 							width:30,
 							cantidad:4,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Laterales Alrededor',
-							height:60,
-							width:30,
-							cantidad:2,
-							color:'white',
-							area:0,
-						},
-						{
-							name:'Laterales Centro',
 							height:58.2,
 							width:30,
 							cantidad:2,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Laterales Centro',
+							height:60,
+							width:30,
+							cantidad:2,
+							color:'other',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 					],
 
@@ -5880,33 +7175,53 @@ var app= new Vue ({
 							height:30,
 							width:176.4,
 							cantidad:2,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Horizontales Pequeños',
 							height:30,
-							width:58.2,
+							width:28.2,
 							cantidad:4,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Horizontales Alrededor',
 							height:30,
-							width:56.4,
+							width:58.2,
 							cantidad:2,
-							color:'white',
+							color:'other',
 							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
 						},
 						{
 							name:'Horizontales Centro',
 							height:30,
-							width:58.2,
+							width:56.4,
 							cantidad:2,
-							color:'white',
+							color:'other',
 							area:0,
-						},
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},						
 					],
 
 
@@ -5927,6 +7242,477 @@ var app= new Vue ({
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				//NUMERO 49
+				code: 42,
+				name: "Mesita Para Sala De Estar",
+				image: "./img/mesita-para-sala-de-estar.jpg",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 80,
+					lastTotalWidth: 100,
+					lastTotalDepth: 30,
+
+					totalHeight: 80,
+					totalWidth: 100,
+					totalDepth: 30,
+
+					X:[
+						{
+							cost:0,
+							name:'Lado trasero',
+							height:20,
+							width:96.4,
+							cantidad:1,
+							color:'black',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:78.2,
+							width:30,
+							cantidad:2,
+							color:'black',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior',
+							height:30,
+							width:100,
+							cantidad:1,
+							color:'black',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Inferior',
+							height:30,
+							width:96.4,
+							cantidad:1,
+							color:'black',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
+						},						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				//NUMERO 50
+				code: 43,
+				name: "C-Estante Separador De Ambientes",
+				image: "./img/estante-separador-de-ambientes.jpg",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 85,
+					lastTotalWidth: 140,
+					lastTotalDepth: 30,
+
+					totalHeight: 85,
+					totalWidth: 140,
+					totalDepth: 30,
+
+					X:[
+						{
+							cost:0,
+							name:'Nada',
+							height:0,
+							width:0,
+							cantidad:0,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales',
+							height:85,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Laterales largos',
+							height:56.4,
+							width:30,
+							cantidad:4,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Laterales peque'+String.fromCharCode(241)+'os',
+							height:25,
+							width:30,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Superior e Inferior',
+							height:30,
+							width:136.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Repisas Medias',
+							height:30,
+							width:26.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Repisas Alrededor',
+							height:30,
+							width:25.4,
+							cantidad:3,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
+						},						
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:32,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				//NUMERO 51
+				code: 44,
+				name: "Estante Separador de Ambientes en Forma de Cubos",
+				image: "./img/estante-separador-de-ambientes-en-forma-de-cubos.jpg",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 140,
+					lastTotalWidth: 140,
+					lastTotalDepth: 25,
+
+					totalHeight: 140,
+					totalWidth: 140,
+					totalDepth: 25,
+
+					X:[
+						{
+							cost:0,
+							name:'Nada',
+							height:0,
+							width:0,
+							cantidad:0,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales largos',
+							height:138.2,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Lateral A',
+							height:103.5,
+							width:25,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Lateral B',
+							height:69,
+							width:25,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Lateral C',
+							height:34.5,
+							width:25,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 1
+							},
+							canteadoCost: 0,
+						},
+					],
+
+			
+
+					Z:[
+						{
+							name:'Inferior',
+							height:25,
+							width:140,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Repisas superiores de Cubos',
+							height:25,
+							width:32.7,
+							cantidad:10,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
+						},				
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:42,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
 							]
 						},
 						width: {
@@ -5941,11 +7727,365 @@ var app= new Vue ({
 						depth: {
 							y: [
 								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				//NUMERO 52
+				code: 45,
+				name: "Estante Escritorio Dise"+String.fromCharCode(241)+"o Moderno Ahorra Espacio",
+				image: "./img/estante-escritorio-dise"+String.fromCharCode(241)+"o-moderno-ahorra-espacio.jpg",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 140,
+					lastTotalWidth: 120,
+					lastTotalDepth: 45,
+
+					totalHeight: 140,
+					totalWidth: 120,
+					totalDepth: 45,
+
+					X:[
+						{
+							cost:0,
+							name:'Estante GRANDE- Laterales ',
+							height:140,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Estante peque'+String.fromCharCode(241)+'o- Laterales ',
+							height:80,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+					],
+			
+
+					Y:[
+						{
+							type: 'nordex',
+							name:'Estante GRANDE- NORDEX',
+							height:140,
+							width:50,
+							cantidad:1,
+							color:'nordex',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						
+					],
+
+			
+
+					Z:[
+						{
+							name:'Escritorio - Repisa',
+							height:45,
+							width:100,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Estante peque'+String.fromCharCode(241)+'o- Superior e Inferior ',
+							height:41.4,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Estante peque'+String.fromCharCode(241)+'o- divisiones ',
+							height:41.4,
+							width:25,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Estante GRANDE- Superior e Inferior',
+							height:46.4,
+							width:25,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Estante GRANDE- Divisiones ',
+							height:46.4,
+							width:25,
+							cantidad:3,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:44,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},								
+							],
+							z: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								{id: 3, prop: 1, type: 'normal'},
+								{id: 4, prop: 1, type: 'normal'},
+							]
+						}
+					}
+
+				}
+			},
+			{
+				//NUMERO 53
+				code: 46,
+				name: "Librero Estante Moderno Para Sala De Estar Melamina",
+				image: "./img/librero-estante-moderno-para-sala-de-estar-melamina.jpg",
+
+				fixedCosts: 50,
+				gain: 120,
+				salePrice: 200,
+
+				data: {
+					lastTotalHeight: 180,
+					lastTotalWidth: 180,
+					lastTotalDepth: 30,
+
+					totalHeight: 180,
+					totalWidth: 180,
+					totalDepth: 30,
+
+					X:[
+						{
+							name:'Frentes Negros',
+							height:41.4,
+							width:40,
+							cantidad:4,
+							color:'black',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+					],
+			
+
+					Y:[
+						{
+							name:'Laterales Blanco',
+							height:45,
+							width:30,
+							cantidad:4,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							name:'Laterales Negros',
+							height:41.4,
+							width:30,
+							cantidad:4,
+							color:'black',
+							area:0,
+							canteado: {
+								height: 2,
+								width: 0
+							},
+							canteadoCost: 0,
+						},
+						
+					],
+
+			
+
+					Z:[
+						{
+							name:'Techo',
+							height:30,
+							width:98.2,
+							cantidad:1,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Repisas Medias ',
+							height:30,
+							width:136.4,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 0,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+						{
+							cost:0,
+							name:'Repisas Inferiores ',
+							height:30,
+							width:178.2,
+							cantidad:2,
+							color:'white',
+							area:0,
+							canteado: {
+								height: 1,
+								width: 2
+							},
+							canteadoCost: 0,
+						},
+					],
+
+
+
+					Extras:[
+						{
+							name:'Tornillos',
+							costo:0.047,
+							cantidad:38,
+						},
+					],
+
+					relations: {
+						height: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+							]
+						},
+						width: {
+							x: [
+								{id: 0, prop: 1, type: 'normal'},
+							],
+							z:[
+								{id: 0, prop: 1, type: 'normal'},
+								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								
+							]
+						},
+						depth: {
+							y: [
+								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},								
 							],
 							z: [
 								{id: 0, prop: 1, type: 'normal'},
 								{id: 1, prop: 1, type: 'normal'},
+								{id: 2, prop: 1, type: 'normal'},
+								
 							]
 						}
 					}
